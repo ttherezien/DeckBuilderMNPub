@@ -17,17 +17,13 @@ Je vous remercie d'avance pour votre gentillesse.
 
 ```bash
 sudo apt-get install qt5-default
-```
-```bash
+
 sudo apt-get install qt5-qmake
-```
-```bash
+
 qmake
-```
-```bash
+
 make
-```
-```bash
+
 ./DeckBuilderMageNoir
 ```
 
