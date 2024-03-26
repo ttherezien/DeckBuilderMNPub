@@ -33,6 +33,8 @@ make
 
 Ah oui les dossiers "images" et "Data" doivent être dans le même répertoire que l'exécutable.
 
+Je sais qu'il n'y a pas les images des carte, vous pouvez les téléchargers sur le site officiel de Mage Noire 'https://magenoir.com/collection_fr.html'
+
 ## Utilisation
 ````
 - 3 menues sont disponibles:
