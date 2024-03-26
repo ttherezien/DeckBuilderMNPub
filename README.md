@@ -33,38 +33,38 @@ make
 
 Ah oui les dossiers "images" et "Data" doivent être dans le même répertoire que l'exécutable.
 
-Je sais qu'il n'y a pas les images des carte, vous pouvez les téléchargers sur le site officiel de Mage Noire 'https://magenoir.com/collection_fr.html'
+Je sais qu'il n'y a pas les images des cartes, vous pouvez les téléchargers sur le site officiel de Mage Noire 'https://magenoir.com/collection_fr.html'
 
 ## Utilisation
 ````
 - 3 menues sont disponibles:
     - Menu principal
     - Menu de création de deck
-    - Menu de visualisation de deck
+    - Menu de visualisation des cartes
 ````
 ````
 - Menu principal:
-    - Permet de choisir entre les 2 autres menues
+    - Permets de choisir entre les 2 autres menus
 ````
 
 ````
 - Menu de création de deck:
-    - Permet de choisir les cartes à ajouter au deck
+    - Permets de choisir les cartes à ajouter au deck
 
 Ajout d'une carte :
-- Double Clique sur une carte dans la liste de gauche 
+- Double-clique sur une carte dans la liste de gauche 
 - Clique sur le bouton "Ajouter" après avoir sélectionné une carte
 - La carte est ajoutée à la liste de droite
 
 Suppression d'une carte :
-- Double Clique sur une carte dans la liste de droite
+- Double-clique sur une carte dans la liste de droite
 - Cliquer sur le bouton "Supprimer" après avoir sélectionné une carte
 - La carte est supprimée de la liste de droite
     
     
 Ah oui, il y a aussi un filtre rudimentaire pour les cartes, il suffit de taper:
-- le nom de la carte dans le champ de recherche
-- ou/et cocher l'élements de la carte au dessus du champ de recherche
+- le nom de la carte dans le champ de recherches
+- ou/et cocher l'élément de la carte au-dessus du champ de recherche
 
 
 Une fois que vous avez fini de créer votre deck, il suffit de cliquer sur le bouton "Sauvegarder" pour enregistrer le deck
@@ -76,7 +76,7 @@ Une fois que vous avez fini de créer votre deck, il suffit de cliquer sur le bo
 
 ````
 - Menu de visualisation de deck:
-    - Permet de visualiser les cartes du deck
+    - Permets de visualiser les cartes du deck
     (je sais c'est un peu inutile, mais je voulais juste tester comment fonctionne Qt)
 
 ````
@@ -89,11 +89,11 @@ Mais vous attendez pas à une réponse rapide, je suis un peu lent.
 
 ## License
 
-Comment on met une licence les copains ?
+Comment on met une licence, les copains ?
 C'est obligatoire ?
 
 ## Remerciements
 
 - Merci à moi-même pour avoir fait ce projet
-- Merci à Double Combos Games pour avoir créé Mage Noir
+- Merci à Double Combo Games pour avoir créé Mage Noir
 - Merci à vous pour avoir lu ce README.md
