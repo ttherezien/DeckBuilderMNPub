@@ -18,9 +18,13 @@ Je vous remercie d'avance pour votre gentillesse.
 ```bash
 sudo apt-get install qt5-default
 
-sudo apt-get install qt5-qmake
+or
 
-qmake
+sudo apt install qtbase5-dev
+
+sudo apt-get install cmake
+
+cmake
 
 make
 
