@@ -75,8 +75,8 @@ Une fois que vous avez fini de créer votre deck, il suffit de cliquer sur le bo
 ````
 
 ````
-- Menu de visualisation de deck:
-    - Permets de visualiser les cartes du deck
+- Menu de visualisation de carte:
+    - Permets de visualiser les cartes du carte
     (je sais c'est un peu inutile, mais je voulais juste tester comment fonctionne Qt)
 
 ````
