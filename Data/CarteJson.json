@@ -4,28 +4,33 @@
         "Nom": "GRAINE",
         "Élément": "Végétal",
         "Type": "Sort",
-        "Coût en Mana": "1  Végétal",
-        "Composants nécessaires": "Aucun",
         "Effets": "Vous gagnez 1 Point de Vie.",
         "Illustration": "Jessica Heran",
         "Texte d'ambiance": "Aucun",
         "Extension": "Jeu de base",
         "Notes": "Il n'y a aucune limite au nombre de PV que les joueurs peuvent avoir.",
-        "image": "Graine.png"
+        "image": "Graine.png",
+        "Composants": {},
+        "Couts": {
+            "Végétal": "1"
+        }
     },
     {
         "id": 1,
         "Nom": "GRAINE GERMEE",
         "Élément": "Végétal",
         "Type": "Sort",
-        "Coût en Mana": "1  Végétal 1  Eau",
-        "Composants nécessaires": "Aucun",
         "Effets": "Transmutable : Goutte (Ce sort est utilisable comme composant Goutte.)Allez chercher 1 carte Arbre dans votre deck, montrez-la à votre adversaire, mettez-la dans votre main, puis mélangez votre deck.",
         "Illustration": "Geoffrey Amesse",
         "Texte d'ambiance": "Aucun",
         "Extension": "Jeu de base",
         "Notes": "Cette carte est comptée comme si elle avait \"Goutte\" dans son nom à tout instant.Comme si celle-ci était nommée \"Graine germée goutte\".",
-        "image": "Graine-germee.png"
+        "image": "Graine-germee.png",
+        "Composants": {},
+        "Couts": {
+            "Végétal": "1",
+            "Eau": "1"
+        }
     },
     {
         "id": 2,
@@ -33,14 +38,19 @@
         "Élément": "Végétal",
         "Type": "Permanent",
         "PV": "3",
-        "Coût en Mana": "3  Végétal 1  Eau",
-        "Composants nécessaires": "1 Graine",
         "Effets": "Lorsqu'il arrive en jeu, défausse la Graine utilisée comme composant.Au début de votre tour, inflige 2 points de dégâts à l'adversaire, puis vous pouvez mettre 1 Graine en préparation depuis votre défausse.Protecteur (Vous pouvez rediriger les dégâts adverses sur ce Permanent.)",
         "Illustration": "Camille Fourcade",
         "Texte d'ambiance": "Aucun",
         "Extension": "Jeu de base",
         "Notes": "La graine qui revient au début de votre tour est mise en préparation, vous pourrez l'activer ou la canaliser durant votre phase principale.",
-        "image": "Arbre-anime.png"
+        "image": "Arbre-anime.png",
+        "Composants": {
+            "Graine": 1
+        },
+        "Couts": {
+            "Végétal": "3",
+            "Eau": "1"
+        }
     },
     {
         "id": 3,
@@ -48,14 +58,16 @@
         "Élément": "Végétal",
         "Type": "Permanent",
         "PV": "2",
-        "Coût en Mana": "2  Végétal",
-        "Composants nécessaires": "Aucun",
         "Effets": "Si vous êtes Mage Noir, ce Permanent a Protecteur (Vous pouvez rediriger les dégâts adverses sur ce Permanent.)",
         "Illustration": "Camille Fourcade",
         "Texte d'ambiance": "Aucun",
         "Extension": "Jeu de base",
         "Notes": "Tant que vous êtes Mage Noir, si vous ou un Permanent que vous contrôlez s'apprête à recevoir des dégâts de votre adversaire. Vous pouvez décider que cet arbre prend les dégâts à la place.",
-        "image": "Arbre-mort.png"
+        "image": "Arbre-mort.png",
+        "Composants": {},
+        "Couts": {
+            "Végétal": "2"
+        }
     },
     {
         "id": 4,
@@ -63,14 +75,18 @@
         "Élément": "Végétal",
         "Type": "Permanent",
         "PV": "5",
-        "Coût en Mana": "5  Végétal",
-        "Composants nécessaires": "1 Arbre",
         "Effets": "Unique (Vous ne pouvez contrôler qu'un seul exemplaire de cette carte)Au début de votre tour, inflige 2 points de dégâts à l'adversaire pour chaque Arbre sur le plateau.Si vous êtes Mage Noir, vos autres Arbres appliquent leurs effets 1 fois de plus.",
         "Illustration": "Geoffrey Amesse",
         "Texte d'ambiance": "Aucun",
         "Extension": "Jeu de base",
         "Notes": "Si à n'importe que moment vous avez plus d'une copie de cette carte en jeu, détruisez des copies immédiatement jusqu'à ce que vous n'en ayez plus qu'une en jeu.",
-        "image": "Roi-des-arbres.png"
+        "image": "Roi-des-arbres.png",
+        "Composants": {
+            "Arbre": 1
+        },
+        "Couts": {
+            "Végétal": "5"
+        }
     },
     {
         "id": 5,
@@ -78,14 +94,20 @@
         "Élément": "Végétal",
         "Type": "Permanent",
         "PV": "3",
-        "Coût en Mana": "2  Végétal 1  Feu",
-        "Composants requis ": "1 Arbre\n1 Flamme",
         "Effets": "Si vous êtes Mage Noir, préparer ce sort nécessite 1 composant de moins.Au début de votre tour, ce Permanent inflige 2 points de dégâts à l'adversaire, puis il perd 1 Point de Vie.",
         "Illustration": "Nicolas Camiade",
         "Texte d'ambiance": "Aucun",
         "Extension": "Jeu de base",
         "Notes": "Tant que vous êtes Mage Noir, vous choisissez quel composant ignorer entre \"Arbre\" et \"Flamme\".",
-        "image": "Arbre-en-flammes.png"
+        "image": "Arbre-en-flammes.png",
+        "Composants": {
+            "Arbre": 1,
+            "Flamme": 1
+        },
+        "Couts": {
+            "Végétal": "2",
+            "Feu": "1"
+        }
     },
     {
         "id": 6,
@@ -93,14 +115,19 @@
         "Élément": "Végétal",
         "Type": "Permanent",
         "PV": "4",
-        "Coût en Mana": "2  Végétal 2  Eau",
-        "Composants requis ": "2 Arbre",
         "Effets": "Au début de votre tour, vous et vos Permanents Végétaux qui ont des Points de Vie gagnez 2 Points de Vie.Protecteur (Vous pouvez rediriger les dégâts adverses sur ce Permanent.)",
         "Illustration": "Jessica Heran",
         "Texte d'ambiance": "Aucun",
         "Extension": "Jeu de base",
         "Notes": "Ce permanent augmente aussi ses propres PV.",
-        "image": "Foret-enchantee.png"
+        "image": "Foret-enchantee.png",
+        "Composants": {
+            "Arbre": 2
+        },
+        "Couts": {
+            "Végétal": "2",
+            "Eau": "2"
+        }
     },
     {
         "id": 7,
@@ -108,294 +135,372 @@
         "Élément": "Végétal",
         "Type": "Permanent",
         "PV": "10",
-        "Coût en Mana": "3  Végétal 1  Minéral",
-        "Composants requis ": "3 Arbre",
         "Effets": "Au début de votre tour, inflige X points de dégâts à n'importe quelle cible, X étant les Points de Vie actuels de ce Permanent.Protecteur (Vous pouvez rediriger les dégâts adverses sur ce Permanent)",
         "Illustration": "Jessica Heran",
         "Texte d'ambiance": "Aucun",
         "Extension": "Jeu de base",
         "Notes": "Il n'y a aucune limite au nombre de PV qu'un Permanent peut avoir.",
-        "image": "Foret-hostile.png"
+        "image": "Foret-hostile.png",
+        "Composants": {
+            "Arbre": 3
+        },
+        "Couts": {
+            "Végétal": "3",
+            "Minéral": "1"
+        }
     },
     {
         "id": 8,
         "Nom": "SEMÉE PRODIGIEUSE",
         "Élément": "Végétal",
         "Type": "Permanent",
-        "Coût en Mana": "1  Végétal 1  Eau",
-        "Composants requis ": "1 Graine",
         "Effets": "Tant que ce Permanent est en jeu, jusqu'à 3 composants Graine que vous contrôlez ont : \"Transmutable : Arbre\" (Ce sort est utilisable comme composant Arbre.)Au début de votre tour, payez 1 Mana Végétal et 1 Mana Eau ou détruisez Semée prodigieuse.",
         "Illustration": "Camille Fourcade",
         "Texte d'ambiance": "Aucun",
         "Extension": "Jeu de base",
         "Notes": "Vous devez payer pour Semée prodigieuse avant votre phase de pioche. Cela signifie aussi avant votre phase de récupération de Mana.",
-        "image": "Semee-prodigieuse.png"
+        "image": "Semee-prodigieuse.png",
+        "Composants": {
+            "Graine": 1
+        },
+        "Couts": {
+            "Végétal": "1",
+            "Eau": "1"
+        }
     },
     {
         "id": 9,
         "Nom": "RONCES ÉPHÉMÈRES",
         "Élément": "Végétal",
         "Type": "Sort",
-        "Coût en Mana": "2  Végétal",
-        "Composants requis ": "1 Graine",
         "Effets": "L'adversaire choisit 1 option :- Il défausse 1 carte de sa main- Il perd 3 Points de Vie",
         "Illustration": "Geoffrey Amesse",
         "Texte d'ambiance": "Aucun",
         "Extension": "Jeu de base",
         "Notes": "Si l'adversaire n'a pas de carte en main, il peut choisir de prendre la première option. Dans ce cas, rien ne se passe.",
-        "image": "Ronces-ephemeres.png"
+        "image": "Ronces-ephemeres.png",
+        "Composants": {
+            "Graine": 1
+        },
+        "Couts": {
+            "Végétal": "2"
+        }
     },
     {
         "id": 10,
         "Nom": "LA GUÉRISSEUSE SYLVESTRE",
         "Élément": "Végétal",
         "Type": "Sort",
-        "Coût en Mana": "2  Végétal 1  Air 1  Eau",
-        "Composants requis ": "Aucun",
         "Effets": "Choisissez 1 option :- Le Permanent Végétal avec des Points de Vie ciblé gagne 4 Points de Vie.- Vous gagnez 3 Points de Vie.",
         "Illustration": "Camille Fourcade",
         "Texte d'ambiance": "Aucun",
         "Extension": "Jeu de base",
         "Notes": "Il n'y a pas de limite au nombre de PV qu'un Permanent peut avoir.",
-        "image": "La-guerisseuse-sylvestre.png"
+        "image": "La-guerisseuse-sylvestre.png",
+        "Composants": {},
+        "Couts": {
+            "Végétal": "2",
+            "Air": "1",
+            "Eau": "1"
+        }
     },
     {
         "id": 11,
         "Nom": "ARMURE D'ÉCORCE",
         "Élément": "Végétal",
         "Type": "Équipement - Torse",
-        "Coût en Mana": "2  Végétal",
-        "Composants nécessaires": "1 Arbre",
         "Effets": "Chaque tour, ignorez jusqu'à 1 point de dégâts adverses qui vous sont infligés.",
         "Illustration": "Jessica Heran",
         "Texte d'ambiance": "Aucun",
         "Extension": "Jeu de base",
         "Notes": "Cet effet ne vous protège que vous et pas vos Permanents.",
-        "image": "Armure-d-ecorce.png"
+        "image": "Armure-d-ecorce.png",
+        "Composants": {
+            "Arbre": 1
+        },
+        "Couts": {
+            "Végétal": "2"
+        }
     },
     {
         "id": 12,
         "Nom": "ARMURE DE DRUIDE",
         "Élément": "Végétal",
         "Type": "Équipement - Torse",
-        "Coût en Mana": "1  Végétal 1  Arcane",
-        "Composants requis ": "1 ÉCORCE",
         "Effets": "Chaque tour, ignorez jusqu'à 3 points de dégâts adverses qui vous sont infligés.",
         "Illustration": "Jessica Heran",
         "Texte d'ambiance": "Aucun",
         "Extension": "Jeu de base",
         "Notes": "Cet effet ne vous protège que vous et pas vos Permanents.",
-        "image": "Armure-de-druide.png"
+        "image": "Armure-de-druide.png",
+        "Composants": {
+            "ÉCORCE": 1
+        },
+        "Couts": {
+            "Végétal": "1",
+            "Arcane": "1"
+        }
     },
     {
         "id": 13,
         "Nom": "ROBE DE KERLOC'H",
         "Élément": "Végétal",
         "Type": "Équipement - Torse",
-        "Coût en Mana": "2  Végétal 2  Arcane",
-        "Composants requis ": "2 Druide",
         "Effets": "Les dégâts des sorts Végétaux (dont Permanents) que vous contrôlez sont augmentés de 3.Les dégâts qui vous sont infligés sont réduits de 2.A tout moment, vous pouvez détruire cet Équipement et défausser toute votre main pour annuler les dégâts qui vous sont infligés jusqu'à la fin du tour.",
         "Illustration": "Jessica Heran",
         "Texte d'ambiance": "Aucun",
         "Extension": "Jeu de base",
         "Notes": "Vous pouvez sacrifier ceci juste avant de prendre des dégâts, y compris pendant le tour de votre adversaire.",
-        "image": "Robe-de-kerloch.png"
+        "image": "Robe-de-kerloch.png",
+        "Composants": {
+            "Druide": 2
+        },
+        "Couts": {
+            "Végétal": "2",
+            "Arcane": "2"
+        }
     },
     {
         "id": 14,
         "Nom": "CORNES DE DRUIDE",
         "Élément": "Végétal",
         "Type": "Équipement - Tête",
-        "Coût en Mana": "3  Arcane 1  Végétal",
-        "Composants requis ": "Aucun",
         "Effets": "A tout moment, vous pouvez regarder la carte du dessus de votre deck. Si c'est une Graine, montrez-la à votre adversaire et mettez-la dans votre main.Vos Graines coûtent 1 Mana Végétal de moins. Si vous êtes Mage Noir, vos Graines coûtent 0 Mana.",
         "Illustration": "Jessica Heran",
         "Texte d'ambiance": "Aucun",
         "Extension": "Jeu de base",
         "Notes": "Vous pouvez récupérer plusieurs Graines d'affilée en main.",
-        "image": "Cornes-de-druide.png"
+        "image": "Cornes-de-druide.png",
+        "Composants": {},
+        "Couts": {
+            "Arcane": "3",
+            "Végétal": "1"
+        }
     },
     {
         "id": 15,
         "Nom": "ANNEAU DU DRUIDE",
         "Élément": "Végétal",
         "Type": "Équipement - Anneau",
-        "Coût en Mana": "3  Végétal 1  Minéral",
-        "Composants requis ": "Aucun",
         "Effets": "Les dégâts infligés par les Permanents Végétaux que vous contrôlez sont augmentés de 2.Si vous êtes Mage Noir, lorsque vous ajoutez de la Mana dans l'Ether disponible au début de votre tour, ajoutez 1 Mana Végétal supplémentaire.",
         "Illustration": "Camille Fourcade",
         "Texte d'ambiance": "Aucun",
         "Extension": "Jeu de base",
         "Notes": "Si vous êtes Mage Noir, ajouter de la Mana au début de votre tour est considéré comme ajouter toute la Mana en une seule fois.",
-        "image": "Anneau-du-druide.png"
+        "image": "Anneau-du-druide.png",
+        "Composants": {},
+        "Couts": {
+            "Végétal": "3",
+            "Minéral": "1"
+        }
     },
     {
         "id": 16,
         "Nom": "RITUEL DE DÉCOMPOSITION",
         "Élément": "Végétal",
         "Type": "Rituel",
-        "Coût en Mana": "3  Arcane 2  Végétal",
-        "Composants requis ": "Aucun",
         "Effets": "Vous passez Mage Noir.Au début de votre tour, perdez 1 Point de Vie.Durant votre phase principale, vous pouvez détruire 1 Permanent que vous contrôlez pour infliger un montant de dégâts égal à ses Points de Vie à n'importe quelle cible.(Vous pouvez le faire plusieurs fois par tour)",
         "Illustration": "Jessica Heran",
         "Texte d'ambiance": "Aucun",
         "Extension": "Jeu de base",
         "Notes": "Les dégâts que vous inflige ce sort au début de votre tour sont des PV perdus, les protecteurs et les armures ne peuvent rien contre.",
-        "image": "Rituel-de-decomposition.png"
+        "image": "Rituel-de-decomposition.png",
+        "Composants": {},
+        "Couts": {
+            "Arcane": "3",
+            "Végétal": "2"
+        }
     },
     {
         "id": 17,
         "Nom": "FLAMME",
         "Élément": "Feu",
         "Type": "Sort",
-        "Coût en Mana": "Aucun",
-        "Composants requis ": "Aucun",
         "Effets": "Inflige 1 point de dégâts à n'importe quelle cible.\n\t\t\t\t\t\t\n\t\t\t\t\t\t\tAprès que ce sort est utilisé comme composant, défaussez-le.",
         "Illustration": "Charles Ouvrard",
         "Texte d'ambiance": "Aucun",
         "Extension": "Jeu de base",
         "Notes": null,
-        "image": "Flamme.png"
+        "image": "Flamme.png",
+        "Composants": {},
+        "Couts": {}
     },
     {
         "id": 18,
         "Nom": "FLAMME DRACONIQUE",
         "Élément": "Feu",
         "Type": "Sort",
-        "Coût en Mana": "2  Feu",
-        "Composants requis ": "Aucun",
         "Effets": "Inflige 2 points de dégâts à n'importe quelle cible.Après que ce sort est utilisé comme composant, vous perdez 1 Point de Vie.",
         "Illustration": "Nicolas Camiade",
         "Texte d'ambiance": "Aucun",
         "Extension": "Jeu de base",
         "Notes": "Si votre adversaire parvient à utiliser la \"Flamme draconique\" que vous contrôlez comme composant, vous perdez 1 PV.",
-        "image": "Flamme-draconique.png"
+        "image": "Flamme-draconique.png",
+        "Composants": {},
+        "Couts": {
+            "Feu": "2"
+        }
     },
     {
         "id": 19,
         "Nom": "FLAMME MENTALE",
         "Élément": "Feu",
         "Type": "Sort",
-        "Coût en Mana": "Aucun",
-        "Composants requis ": "Aucun",
         "Effets": "Tant que ce sort est canalisé comme composant :au début de votre tour, payez 1 Mana Feu ou défaussez ce sort.",
         "Illustration": "Geoffrey Amesse",
         "Texte d'ambiance": "Aucun",
         "Extension": "Jeu de base",
         "Notes": "Vous devez payer pour \"Flamme mentale\" avant votre phase de pioche. Cela veut aussi dire avant votre phase de récupération de Mana.",
-        "image": "Flamme-mentale.png"
+        "image": "Flamme-mentale.png",
+        "Composants": {},
+        "Couts": {}
     },
     {
         "id": 20,
         "Nom": "FLAMME DE SOUFRE",
         "Élément": "Feu",
         "Type": "Sort",
-        "Coût en Mana": "1  Feu 1  Arcane",
-        "Composants requis ": "Aucun",
         "Effets": "Ne peut être préparé que par un Mage Noir.Inflige 3 points de dégâts à n'importe quelle cible.",
         "Illustration": "Geoffrey Amesse",
         "Texte d'ambiance": "Aucun",
         "Extension": "Jeu de base",
         "Notes": "Veuillez noter que les sorts doivent passer par une phase de préparation avant d'être canalisés. Ainsi vous ne pouvez pas mettre ce sort comme composant non plus si vous n'êtes pas Mage Noir.",
-        "image": "Flamme-de-soufre.png"
+        "image": "Flamme-de-soufre.png",
+        "Composants": {},
+        "Couts": {
+            "Feu": "1",
+            "Arcane": "1"
+        }
     },
     {
         "id": 21,
         "Nom": "PLUIE DE FLAMMES",
         "Élément": "Feu",
         "Type": "Sort",
-        "Coût en Mana": "2  Feu 1  Eau 1  Minéral",
-        "Composants requis ": "Aucun",
         "Effets": "Ne peut être préparé que par un Mage Noir.Inflige 5 points de dégâts, répartis comme vous le souhaitez entre 1 à 5 cibles.",
         "Illustration": "Nicolas Camiade",
         "Texte d'ambiance": "Aucun",
         "Extension": "Jeu de base",
         "Notes": "Veuillez noter que les sorts doivent passer par une phase de préparation avant d'être canalisés. Ainsi vous ne pouvez pas mettre ce sort comme composant non plus si vous n'êtes pas Mage Noir.",
-        "image": "Pluie-de-flammes.png"
+        "image": "Pluie-de-flammes.png",
+        "Composants": {},
+        "Couts": {
+            "Feu": "2",
+            "Eau": "1",
+            "Minéral": "1"
+        }
     },
     {
         "id": 22,
         "Nom": "PROJECTILE DE FLAMME",
         "Élément": "Feu",
         "Type": "Sort",
-        "Coût en Mana": "1  Feu 1  Air",
-        "Composants requis ": "1 Flamme",
         "Effets": "Inflige 3 points de dégâts à n'importe quelle cible.",
         "Illustration": "Nicolas Camiade",
         "Texte d'ambiance": "Aucun",
         "Extension": "Jeu de base",
         "Notes": null,
-        "image": "Projectile-de-flamme.png"
+        "image": "Projectile-de-flamme.png",
+        "Composants": {
+            "Flamme": 1
+        },
+        "Couts": {
+            "Feu": "1",
+            "Air": "1"
+        }
     },
     {
         "id": 23,
         "Nom": "VAGUE DE FLAMMES",
         "Élément": "Feu",
         "Type": "Sort",
-        "Coût en Mana": "2  Feu 2  Eau",
-        "Composants requis ": "1 Flamme",
         "Effets": "Inflige 1 point de dégâts à l'adversaire et ses Permanents par composant Flamme que vous contrôlez.",
         "Illustration": "Nicolas Camiade",
         "Texte d'ambiance": "Aucun",
         "Extension": "Jeu de base",
         "Notes": "Ce sort inflige tous ses dégâts en même temps. Ainsi, avoir 3 composants Flamme sur le plateau va faire infliger 3 dégâts et non 3 fois 1 dégât.",
-        "image": "Vague-de-flammes.png"
+        "image": "Vague-de-flammes.png",
+        "Composants": {
+            "Flamme": 1
+        },
+        "Couts": {
+            "Feu": "2",
+            "Eau": "2"
+        }
     },
     {
         "id": 24,
         "Nom": "FLÈCHE ARDENTE",
         "Élément": "Feu",
         "Type": "Sort",
-        "Coût en Mana": "2  Feu",
-        "Composants requis ": "1 Flamme",
         "Effets": "Inflige 3 points de dégâts à l'adversaire (ou 4 si vous êtes Mage Noir).",
         "Illustration": "Geoffrey Amesse",
         "Texte d'ambiance": "Aucun",
         "Extension": "Jeu de base",
         "Notes": null,
-        "image": "Fleche-ardente.png"
+        "image": "Fleche-ardente.png",
+        "Composants": {
+            "Flamme": 1
+        },
+        "Couts": {
+            "Feu": "2"
+        }
     },
     {
         "id": 25,
         "Nom": "BOULE DE FEU",
         "Élément": "Feu",
         "Type": "Sort",
-        "Coût en Mana": "2  Feu 1  Air",
-        "Composants requis ": "1 Flamme",
         "Effets": "Vous pouvez défausser 1 carte Feu depuis votre main pour préparer ce sort sans le composant Flamme requis.\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\tInflige 2 points de dégâts à tous les permanents de l'adversaire.\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\tPuis inflige 2 points de dégâts à l'adversaire (ou 3 si vous êtes Mage Noir).",
         "Illustration": "Nicolas Camiade",
         "Texte d'ambiance": "Aucun",
         "Extension": "Jeu de base",
         "Notes": "Toute carte avec l'icône Feu dans son coin supérieur droit est considéré comme une carte Feu et peut être défaussée pour préparer ce sort.",
-        "image": "Boule-de-feu.png"
+        "image": "Boule-de-feu.png",
+        "Composants": {
+            "Flamme": 1
+        },
+        "Couts": {
+            "Feu": "2",
+            "Air": "1"
+        }
     },
     {
         "id": 26,
         "Nom": "ÉRUPTION DE MAGMA",
         "Élément": "Feu",
         "Type": "Sort",
-        "Coût en Mana": "3  Feu 1  Minéral",
-        "Composants requis ": "3 Flamme",
         "Effets": "Inflige 7 points de dégâts à n'importe quelle cible.",
         "Illustration": "Camille Fourcade",
         "Texte d'ambiance": "Aucun",
         "Extension": "Jeu de base",
         "Notes": null,
-        "image": "Magma-eruption.png"
+        "image": "Magma-eruption.png",
+        "Composants": {
+            "Flamme": 3
+        },
+        "Couts": {
+            "Feu": "3",
+            "Minéral": "1"
+        }
     },
     {
         "id": 27,
         "Nom": "FISSION",
         "Élément": "Feu",
         "Type": "Sort",
-        "Coût en Mana": "2  Feu",
-        "Composants requis ": "1 Flamme",
         "Effets": "Vous pouvez défausser 1 carte Feu depuis votre main pour préparer ce sort sans le composant Flamme requis.\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\tDéfaussez-vous d'1 carte en main.\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\tDétruisez 1 Permanent.",
         "Illustration": "Johann Goutard",
         "Texte d'ambiance": "Aucun",
         "Extension": "Jeu de base",
         "Notes": "Toute carte avec l'icône Feu dans son coin supérieur droit est considéré comme une carte Feu et peut être défaussée pour préparer ce sort.",
-        "image": "Fission.png"
+        "image": "Fission.png",
+        "Composants": {
+            "Flamme": 1
+        },
+        "Couts": {
+            "Feu": "2"
+        }
     },
     {
         "id": 28,
@@ -403,70 +508,85 @@
         "Limite en deck": "1",
         "Élément": "Feu",
         "Type": "Sort",
-        "Coût en Mana": "3  Feu",
-        "Composants requis ": "Aucun",
         "Effets": "Si vous êtes Mage Noir, ce sort coûte 1 Mana Feu de moins à préparer.\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\tCe tour-ci, à chaque fois qu'un sort va depuis le plateau vers la défausse, inflige 1 point de dégâts à l'adversaire.",
         "Illustration": "Johann Goutard",
         "Texte d'ambiance": "Aucun",
         "Extension": "Jeu de base",
         "Notes": null,
-        "image": "Ignition.png"
+        "image": "Ignition.png",
+        "Composants": {},
+        "Couts": {
+            "Feu": "3"
+        }
     },
     {
         "id": 29,
         "Nom": "FOUET DE FEU",
         "Élément": "Feu",
         "Type": "Équipement - Arme",
-        "Coût en Mana": "3  Feu",
-        "Composants requis ": "Aucun",
         "Effets": "Au début de votre tour, inflige 1 point de dégâts à l'adversaire (ou 2 si vous êtes Mage Noir).",
         "Illustration": "Geoffrey Amesse",
         "Texte d'ambiance": "None",
         "Extension": "Jeu de base",
         "Notes": null,
-        "image": "Fouet-de-feu.png"
+        "image": "Fouet-de-feu.png",
+        "Composants": {},
+        "Couts": {
+            "Feu": "3"
+        }
     },
     {
         "id": 30,
         "Nom": "ANNEAU POURPRE",
         "Élément": "Feu",
         "Type": "Équipement - Anneau",
-        "Coût en Mana": "1  Feu 1  Minéral",
-        "Composants requis ": "Aucun",
         "Effets": "Lorsque vous perdez des Points de Vie ou que des dégâts vous sont infligés, vous pouvez payer 1 Mana Feu pour infliger 1 point de dégâts à l'adversaire.",
         "Illustration": "Nicolas Camiade",
         "Texte d'ambiance": "Aucun",
         "Extension": "Jeu de base",
         "Notes": "Les effets de cet équipement s'appliquent aussi si vous vous infligez des dégâts à vous-même.",
-        "image": "Anneau-pourpre.png"
+        "image": "Anneau-pourpre.png",
+        "Composants": {},
+        "Couts": {
+            "Feu": "1",
+            "Minéral": "1"
+        }
     },
     {
         "id": 31,
         "Nom": "MASQUE DE FEU",
         "Élément": "Feu",
         "Type": "Équipement - Tête",
-        "Coût en Mana": "1  Feu 1  Végétal",
-        "Composants requis ": "Aucun",
         "Effets": "A tout moment, vous pouvez regarder la carte du dessus de votre deck. \n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\tLes composants nécessaires plusieurs fois pour préparer vos sorts Feu sont nécessaires 1 fois de moins.",
         "Illustration": "Camille Fourcade",
         "Texte d'ambiance": "Aucun",
         "Extension": "Jeu de base",
         "Notes": "\"Plusieurs fois\" désigne les composants qui sont nécessaires plus d'une fois pour la même carte. Avoir 2 cartes qui demandent le même composant une fois chacune ne compte pas comme si le composant était nécessaire plusieurs fois.",
-        "image": "Masque-de-feu.png"
+        "image": "Masque-de-feu.png",
+        "Composants": {},
+        "Couts": {
+            "Feu": "1",
+            "Végétal": "1"
+        }
     },
     {
         "id": 32,
         "Nom": "ROBE BRÛLANTE",
         "Élément": "Feu",
         "Type": "Équipement - Torse",
-        "Coût en Mana": "1  Feu 1  Végétal",
-        "Composants requis ": "2 Flamme",
         "Effets": "Chaque fois qu'un sort Feu que vous contrôlez inflige des dégâts à une cible adverse, ils sont augmentés de 1 (ou 2 si vous êtes Mage Noir). \n\t\t\t\t\t\t\tPuis, Robe brûlante vous inflige 1 point de dégâts.",
         "Illustration": "Camille Fourcade",
         "Texte d'ambiance": "Aucun",
         "Extension": "Jeu de base",
         "Notes": "\"Robe brûlante\" s'applique sur chaque instance de dégâts que vous faites. Donc si vous infligez 3 fois 1 dégât, les 3 fois seront augmentées et vous recevrez 1 dégât 3 fois.",
-        "image": "Robe-brulante.png"
+        "image": "Robe-brulante.png",
+        "Composants": {
+            "Flamme": 2
+        },
+        "Couts": {
+            "Feu": "1",
+            "Végétal": "1"
+        }
     },
     {
         "id": 33,
@@ -474,546 +594,669 @@
         "Limite en deck": "2",
         "Élément": "Feu",
         "Type": "Rituel",
-        "Coût en Mana": "2  Arcane 1  Feu",
-        "Composants requis ": "Aucun",
         "Effets": "Lorsque ce sort arrive en jeu, perdez la moitié de vos Points de Vie actuels, arrondie à l'inférieur.\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\tVous passez Mage Noir.\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\tDurant votre phase principale, vous pouvez perdre 1 PV pour prendre 1 Mana Feu dans l'Ether Infini et piocher 1 carte.\n(Vous pouvez le faire plusieurs fois par tour)",
         "Illustration": "Nicolas Camiade",
         "Texte d'ambiance": "Aucun",
         "Extension": "Jeu de base",
         "Notes": "Lorsqu'il arrive en jeu, ce qui est arrondi à l'inférieur sont le montant de PV que vous perdez. Par exemple, si vous aviez 19PV, vous avez à présent 10 PV.",
-        "image": "Rituel-pourpre.png"
+        "image": "Rituel-pourpre.png",
+        "Composants": {},
+        "Couts": {
+            "Arcane": "2",
+            "Feu": "1"
+        }
     },
     {
         "id": 34,
         "Nom": "SOUFFLE",
         "Élément": "Air",
         "Type": "Sort",
-        "Coût en Mana": "1  Air",
-        "Composants requis ": "Aucun",
         "Effets": "Prenez jusqu'à 2 Mana Air dans l'Ether Disponible.",
         "Illustration": "Jeffrey Jeanson",
         "Texte d'ambiance": "Aucun",
         "Extension": "Jeu de base",
         "Notes": "La Mana Air peut venir de n'importe laquelle des deux piles. Vous pouvez même en prendre dans les deux.",
-        "image": "Souffle.png"
+        "image": "Souffle.png",
+        "Composants": {},
+        "Couts": {
+            "Air": "1"
+        }
     },
     {
         "id": 35,
         "Nom": "SOUFFLE DE LA GUÉRISSEUSE",
         "Élément": "Air",
         "Type": "Sort",
-        "Coût en Mana": "2  Air",
-        "Composants requis ": "Aucun",
         "Effets": "Vous gagnez 1 Point de Vie puis piochez 1 carte.\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\tSi vous contrôlez un composant Souffle, gagnez à nouveau 1 Point de Vie.",
         "Illustration": "Camille Fourcade",
         "Texte d'ambiance": "Aucun",
         "Extension": "Jeu de base",
         "Notes": "Il n'y a aucune limite au nombre de PV que les joueurs peuvent avoir.",
-        "image": "Souffle-de-la-guerisseuse.png"
+        "image": "Souffle-de-la-guerisseuse.png",
+        "Composants": {},
+        "Couts": {
+            "Air": "2"
+        }
     },
     {
         "id": 36,
         "Nom": "SOUFFLE DE FLAMMES",
         "Élément": "Air",
         "Type": "Sort",
-        "Coût en Mana": "1  Air 1  Feu",
-        "Composants requis ": "Aucun",
         "Effets": "Inflige 3 points de dégâts à 1 Permanent. Ils ne peuvent pas être ignorés, réduits, ni redirigés.\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\tAprès que ce sort est utilisé comme composant, défaussez-le. Vous pouvez payer 1 Mana Feu ou Air pour ne pas le défausser.",
         "Illustration": "Jeffrey Jeanson",
         "Texte d'ambiance": "Aucun",
         "Extension": "Jeu de base",
         "Notes": "Si vous n'avez pas de Mana Feu ou Air, vous devez défausser ce sort lorsqu'il est utilisé comme composant.",
-        "image": "Souffle-de-flammes.png"
+        "image": "Souffle-de-flammes.png",
+        "Composants": {},
+        "Couts": {
+            "Air": "1",
+            "Feu": "1"
+        }
     },
     {
         "id": 37,
         "Nom": "GRAINE DANS LE VENT",
         "Élément": "Air",
         "Type": "Sort",
-        "Coût en Mana": "2  Air 2  Végétal",
-        "Composants requis ": "Aucun",
         "Effets": "Ce sort coûte 1 Mana Air de moins si vous contrôlez un composant Souffle.\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\tLorsque ce sort quitte le plateau, piochez 1 carte.",
         "Illustration": "Jeffrey Jeanson",
         "Texte d'ambiance": "Aucun",
         "Extension": "Jeu de base",
         "Notes": "Si vous activez ce sort, l'application de ses effets ne va rien faire.",
-        "image": "Graine-dans-le-vent.png"
+        "image": "Graine-dans-le-vent.png",
+        "Composants": {},
+        "Couts": {
+            "Air": "2",
+            "Végétal": "2"
+        }
     },
     {
         "id": 38,
         "Nom": "VENT TOURBILLONNANT",
         "Élément": "Air",
         "Type": "Sort",
-        "Coût en Mana": "4  Air",
-        "Composants requis ": "Aucun",
         "Effets": "Renvoyez 1 sort en préparation au-dessus du deck de son propriétaire.",
         "Illustration": "Jeffrey Jeanson",
         "Texte d'ambiance": "Aucun",
         "Extension": "Jeu de base",
         "Notes": "Les Permanents et Équipements ne peuvent pas être ciblés puisqu'ils ne sont pas considérés comme \"préparés\".",
-        "image": "Vent-tourbillonnant.png"
+        "image": "Vent-tourbillonnant.png",
+        "Composants": {},
+        "Couts": {
+            "Air": "4"
+        }
     },
     {
         "id": 39,
         "Nom": "VENTS FAVORABLES",
         "Élément": "Air",
         "Type": "Sort",
-        "Coût en Mana": "2  Air",
-        "Composants requis ": "1 Souffle",
         "Effets": "Ce tour-ci, vous pouvez échanger la Mana Air à 1 pour 1 dans les deux sens.\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\tRenvoyez 1 composant Souffle que vous contrôlez dans votre deck en troisième position à partir du dessus.",
         "Illustration": "Jeffrey Jeanson",
         "Texte d'ambiance": "Aucun",
         "Extension": "Jeu de base",
         "Notes": "\"Dans les deux sens\" signifie que tant que de la Mana air est impliquée (que ça soit pour la prendre ou la donner), l'échange peut être fait à un ratio de 1 pour 1.",
-        "image": "Vents-favorables.png"
+        "image": "Vents-favorables.png",
+        "Composants": {
+            "Souffle": 1
+        },
+        "Couts": {
+            "Air": "2"
+        }
     },
     {
         "id": 40,
         "Nom": "VENT VIOLENT",
         "Élément": "Air",
         "Type": "Sort",
-        "Coût en Mana": "3  Air",
-        "Composants requis ": "2 Souffle",
         "Effets": "Inflige 4 points de dégâts à n'importe quelle cible.\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\tSi vous êtes Mage Noir, les dégâts infligés sont augmentés de 1 par composant Souffle que vous contrôlez.\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\tRenvoyez 1 composant Souffle que vous contrôlez dans votre deck en troisième position à partir du dessus.",
         "Illustration": "Jeffrey Jeanson",
         "Texte d'ambiance": "Aucun",
         "Extension": "Jeu de base",
         "Notes": "L'effet qui s'applique si vous êtes Mage noir est une augmentation de dégâts. Il n'est donc pas considéré comme une instance de dégâts. Ainsi, les augmentations de dégâts comme \"Robe du hurleur\" ne s'appliqueront pas deux fois sur ce sort.",
-        "image": "Vent-violent.png"
+        "image": "Vent-violent.png",
+        "Composants": {
+            "Souffle": 2
+        },
+        "Couts": {
+            "Air": "3"
+        }
     },
     {
         "id": 41,
         "Nom": "ZÉPHYR",
         "Élément": "Air",
         "Type": "Sort",
-        "Coût en Mana": "2  Air",
-        "Composants requis ": "1 Souffle",
         "Effets": "Inflige 2 points de dégâts à n'importe quelle cible.Piochez 1 carte.",
         "Illustration": "Camille Fourcade",
         "Texte d'ambiance": "Aucun",
         "Extension": "Jeu de base",
         "Notes": null,
-        "image": "Zephyr.png"
+        "image": "Zephyr.png",
+        "Composants": {
+            "Souffle": 1
+        },
+        "Couts": {
+            "Air": "2"
+        }
     },
     {
         "id": 42,
         "Nom": "LAME D'AIR",
         "Élément": "Air",
         "Type": "Sort",
-        "Coût en Mana": "1  Air 1  Arcane",
-        "Composants requis ": "1 Souffle",
         "Effets": "Inflige 3 points de dégâts à n'importe quelle cible. Ils ne peuvent pas être ignorés, réduits, ni redirigés.Renvoyez 1 composant Souffle que vous contrôlez dans votre deck en troisième position à partir du dessus.",
         "Illustration": "Camille Fourcade",
         "Texte d'ambiance": "Aucun",
         "Extension": "Jeu de base",
         "Notes": null,
-        "image": "Lame-d-air.png"
+        "image": "Lame-d-air.png",
+        "Composants": {
+            "Souffle": 1
+        },
+        "Couts": {
+            "Air": "1",
+            "Arcane": "1"
+        }
     },
     {
         "id": 43,
         "Nom": "TORNADE",
         "Élément": "Air",
         "Type": "Sort",
-        "Coût en Mana": "3  Air",
-        "Composants requis ": "1 Vent",
         "Effets": "Inflige 4 points de dégâts à n'importe quelle cible.Appliquez les effets d'1 composant Vent que vous contrôlez, puis renvoyez-le dans votre deck en troisième position à partir du dessus.",
         "Illustration": "Geoffrey Amesse",
         "Texte d'ambiance": "Aucun",
         "Extension": "Jeu de base",
         "Notes": "À cause de la manière dont se résolvent les effets de sorts à l'activation, les effets du Vent sont appliqués entièrement et celui-ci est envoyé dans le deck avant que la Tornade ne se défausse.",
-        "image": "Tornade.png"
+        "image": "Tornade.png",
+        "Composants": {
+            "Vent": 1
+        },
+        "Couts": {
+            "Air": "3"
+        }
     },
     {
         "id": 44,
         "Nom": "TYPHON",
         "Élément": "Air",
         "Type": "Sort",
-        "Coût en Mana": "Aucun",
-        "Composants requis ": "1 Vent 1 Vague",
         "Effets": "Inflige 6 points de dégâts à n'importe quelle cible.Défausse jusqu'à 3 sorts en préparation de l'adversaire.Renvoyez 1 composant Vent que vous contrôlez dans votre deck en troisième position à partir du dessus.",
         "Illustration": "Jeffrey Jeanson",
         "Texte d'ambiance": "Aucun",
         "Extension": "Jeu de base",
         "Notes": "Les Permanents et Équipements ne peuvent pas être ciblés puisqu'ils ne sont pas considérés comme \"préparés\".",
-        "image": "Typhon.png"
+        "image": "Typhon.png",
+        "Composants": {
+            "Vent": 1,
+            "Vague": 1
+        },
+        "Couts": {}
     },
     {
         "id": 45,
         "Nom": "ACCÉLÉRATION",
         "Élément": "Air",
         "Type": "Sort",
-        "Coût en Mana": "2  Air 2  Arcane",
-        "Composants requis": "Aucun",
         "Effets": "Si vous êtes Mage Noir, ce sort coûte 1 Mana Arcane de moins à préparer.Piochez 2 cartes.",
         "Illustration": "Camille Fourcade",
         "Texte d'ambiance": "Aucun",
         "Extension": "Jeu de base",
         "Notes": null,
-        "image": "Acceleration.png"
+        "image": "Acceleration.png",
+        "Composants": {},
+        "Couts": {
+            "Air": "2",
+            "Arcane": "2"
+        }
     },
     {
         "id": 46,
         "Nom": "BALAYAGE PUISSANT",
         "Élément": "Air",
         "Type": "Sort",
-        "Coût en Mana": "4  Air",
-        "Composants nécessaires": "Aucun",
         "Effets": "Renvoyez 1 Équipement dans la main de son propriétaire.\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\tSi vous êtes Mage Noir, piochez 1 carte.",
         "Illustration": "Geoffrey Amesse",
         "Texte d'ambiance": "Aucun",
         "Extension": "Jeu de base",
         "Notes": null,
-        "image": "Balayage-puissant.png"
+        "image": "Balayage-puissant.png",
+        "Composants": {},
+        "Couts": {
+            "Air": "4"
+        }
     },
     {
         "id": 47,
         "Nom": "BAGUETTE DES COURANTS D'AIR",
         "Élément": "Air",
         "Type": "Équipement - Arme",
-        "Coût en Mana": "3  Air 1  Minéral",
-        "Composants nécessaires": "1 Vent",
         "Effets": "Lorsqu'il arrive en jeu, défausse le composant Vent utilisé pour le lancer, sauf si vous êtes Mage Noir.Au début de votre tour, piochez 1 carte, puis ce sort inflige 1 point de dégâts à l'adversaire.",
         "Illustration": "Camille Fourcade",
         "Texte d'ambiance": "Aucun",
         "Extension": "Jeu de base",
         "Notes": "Les effets de cette carte s'activent juste avant la phase de pioche.",
-        "image": "Baguette-des-courants-d-air.png"
+        "image": "Baguette-des-courants-d-air.png",
+        "Composants": {
+            "Vent": 1
+        },
+        "Couts": {
+            "Air": "3",
+            "Minéral": "1"
+        }
     },
     {
         "id": 48,
         "Nom": "ROBE DU HURLEUR",
         "Élément": "Air",
         "Type": "Équipement - Torse",
-        "Coût en Mana": "3  Air 1  Arcane 1  Végétal",
-        "Composants requis ": "Aucun",
         "Effets": "Ne peut être préparé que par un Mage Noir.\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\tLes sorts Air que vous préparez coûtent 1 Mana Air de moins.\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\tLes dégâts des sorts Air que vous contrôlez sont augmentés de 1.",
         "Illustration": "Nicolas Camiade",
         "Texte d'ambiance": "Aucun",
         "Extension": "Jeu de base",
         "Notes": "Un sort Air qui n'a pas de coût en Mana Air n'aura pas de coût en Mana négatif. Il coûtera simplement 0 Mana Air.",
-        "image": "Robe-du-hurleur.png"
+        "image": "Robe-du-hurleur.png",
+        "Composants": {},
+        "Couts": {
+            "Air": "3",
+            "Arcane": "1",
+            "Végétal": "1"
+        }
     },
     {
         "id": 49,
         "Nom": "RITUEL DU VIDE",
         "Élément": "Air",
         "Type": "Rituel",
-        "Coût en Mana": "3  Arcane 2  Air",
-        "Composants requis ": "Aucun",
         "Effets": "Vous passez Mage Noir.\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\tVotre taille de main maximale devient 4. Défaussez-vous immédiatement pour avoir 4 cartes maximum en main.\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\tDurant votre tour, défaussez 1 carte de votre main pour infliger 1 point de dégâts à n'importe quelle cible.\n(Vous pouvez le faire plusieurs fois par tour)",
         "Illustration": "Geoffrey Amesse",
         "Texte d'ambiance": "Aucun",
         "Extension": "Jeu de base",
         "Notes": "Dès que ce sort arrive en jeu, vous devez défausser des cartes jusqu'à en avoir 4 en main.",
-        "image": "Rituel-du-vide.png"
+        "image": "Rituel-du-vide.png",
+        "Composants": {},
+        "Couts": {
+            "Arcane": "3",
+            "Air": "2"
+        }
     },
     {
         "id": 50,
         "Nom": "GOUTTELETTE",
         "Élément": "Eau",
         "Type": "Sort",
-        "Coût en Mana": "Aucun",
-        "Composants requis ": "Aucun",
         "Effets": "Transmutable : Goutte (Ce sort est utilisable comme composant Goutte.)",
         "Illustration": "Jeffrey Jeanson",
         "Texte d'ambiance": "Aucun",
         "Extension": "Jeu de base",
         "Notes": "Cette carte est comptée comme si elle avait \"Goutte\" dans son nom à tout instant. Comme si celle-ci était nommée \"Gouttelette goutte\".",
-        "image": "Gouttelette.png"
+        "image": "Gouttelette.png",
+        "Composants": {},
+        "Couts": {}
     },
     {
         "id": 51,
         "Nom": "GOUTTE D'EAU",
         "Élément": "Eau",
         "Type": "Sort",
-        "Coût en Mana": "1  Eau",
-        "Composants requis ": "Aucun",
         "Effets": "Tant que ce sort est canalisé comme composant, une fois par tour, peut être considéré par un autre sort comme étant 2 composants Goutte.\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\tSi vous êtes Mage Noir, compte toujours comme 2 composants Goutte.",
         "Illustration": "Camille Fourcade",
         "Texte d'ambiance": "Aucun",
         "Extension": "Jeu de base",
         "Notes": "L'effet de ce sort se réinitialise au début de chaque tour, tours de l'adversaire inclus.",
-        "image": "Goutte-d-eau.png"
+        "image": "Goutte-d-eau.png",
+        "Composants": {},
+        "Couts": {
+            "Eau": "1"
+        }
     },
     {
         "id": 52,
         "Nom": "SOUFFLE BRUME",
         "Élément": "Eau",
         "Type": "Sort",
-        "Coût en Mana": "1  Eau 1  Air",
-        "Composants requis ": "Aucun",
         "Effets": "Transmutable : Goutte (Ce sort est utilisable comme composant Goutte.)\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\tRenvoyez 3 cartes de votre défausse dans votre deck, puis mélangez votre deck.",
         "Illustration": "Jeffrey Jeanson",
         "Texte d'ambiance": "Aucun",
         "Extension": "Jeu de base",
         "Notes": "Cette carte est comptée comme si elle avait \"Goutte\" dans son nom à tout instant. Comme si celle-ci était nommée \"Souffle brume goutte\".",
-        "image": "Souffle-brume.png"
+        "image": "Souffle-brume.png",
+        "Composants": {},
+        "Couts": {
+            "Eau": "1",
+            "Air": "1"
+        }
     },
     {
         "id": 53,
         "Nom": "VAGUE DÉFERLANTE",
         "Élément": "Eau",
         "Type": "Sort",
-        "Coût en Mana": "3  Eau",
-        "Composants requis ": "1 Goutte",
         "Effets": "Inflige 3 points de dégâts à n'importe quelle cible (ou 4 si vous êtes Mage Noir).",
         "Illustration": "Charles Ouvrard",
         "Texte d'ambiance": "Aucun",
         "Extension": "Jeu de base",
         "Notes": null,
-        "image": "Vague-deferlante.png"
+        "image": "Vague-deferlante.png",
+        "Composants": {
+            "Goutte": 1
+        },
+        "Couts": {
+            "Eau": "3"
+        }
     },
     {
         "id": 54,
         "Nom": "VAGUE PURIFICATRICE",
         "Élément": "Eau",
         "Type": "Sort",
-        "Coût en Mana": "1  Eau 1  Végétal",
-        "Composants requis ": "1 Goutte",
         "Effets": "La cible de votre choix gagne 2 Points de Vie (ou 3 si vous êtes Mage Noir).",
         "Illustration": "Jeffrey Jeanson",
         "Texte d'ambiance": "Aucun",
         "Extension": "Jeu de base",
         "Notes": "Il n'y a pas de limite au nombre de PV qu'un joueur peut avoir.",
-        "image": "Vague-purificatrice.png"
+        "image": "Vague-purificatrice.png",
+        "Composants": {
+            "Goutte": 1
+        },
+        "Couts": {
+            "Eau": "1",
+            "Végétal": "1"
+        }
     },
     {
         "id": 55,
         "Nom": "VAGUE ÉCHO",
         "Élément": "Eau",
         "Type": "Sort",
-        "Coût en Mana": "2  Eau 1  Arcane",
-        "Composants requis ": "1 Vague",
         "Effets": "Applique les effets d'1 composant Vague que vous contrôlez.",
         "Illustration": "Geoffrey Amesse",
         "Texte d'ambiance": "Aucun",
         "Extension": "Jeu de base",
         "Notes": "\"Vague écho\" peut appliquer les effets d'une autre \"Vague écho\".",
-        "image": "Vague-echo.png"
+        "image": "Vague-echo.png",
+        "Composants": {
+            "Vague": 1
+        },
+        "Couts": {
+            "Eau": "2",
+            "Arcane": "1"
+        }
     },
     {
         "id": 56,
         "Nom": "OCÉAN DÉCHAÎNÉ",
         "Élément": "Eau",
         "Type": "Permanent",
-        "Coût en Mana": "1  Eau",
-        "Composants requis ": "2 Vague",
         "Effets": "Au début de votre tour, vos composants Vague appliquent leurs effets.\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\tPuis, ce sort libère 1 Mana Eau pour chaque composant Vague que vous contrôlez. \n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\tDétruisez ce sort dès qu'il ne verrouille plus de Mana Eau.",
         "Illustration": "Camille Fourcade",
         "Texte d'ambiance": "Aucun",
         "Extension": "Jeu de base",
         "Notes": "À cause de l'ordre des effets de cette carte, même avec un unique Mana Eau sous \"Océan déchaîné\", vous activerez tout de même la totalité de vos composants Vague au début de votre tour.",
-        "image": "Ocean-dechaine.png"
+        "image": "Ocean-dechaine.png",
+        "Composants": {
+            "Vague": 2
+        },
+        "Couts": {
+            "Eau": "1"
+        }
     },
     {
         "id": 57,
         "Nom": "CONDENSATION",
         "Élément": "Eau",
         "Type": "Sort",
-        "Coût en Mana": "1  Eau 1  Feu",
-        "Composants requis ": "Aucun",
         "Effets": "Tant que ce sort est en préparation, au début de votre tour, mettez 1 Mana Eau de l'Éther Infini sous ce sort.\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\tLorsque vous l'activez, répartissez la Mana verrouillée sous Condensation entre votre réserve de Mana et vos sorts.",
         "Illustration": "Jeffrey Jeanson",
         "Texte d'ambiance": "Aucun",
         "Extension": "Jeu de base",
         "Notes": "Si ce sort est canalisé comme composant. Il ne verrouille plus de Mana au début du tour.",
-        "image": "Condensation.png"
+        "image": "Condensation.png",
+        "Composants": {},
+        "Couts": {
+            "Eau": "1",
+            "Feu": "1"
+        }
     },
     {
         "id": 58,
         "Nom": "HAUTE PRESSION",
         "Élément": "Eau",
         "Type": "Sort",
-        "Coût en Mana": "3  Eau 1  Air 1  Feu",
-        "Composants requis ": "1 Condensation",
         "Effets": "Inflige X points de dégâts à n'importe quelle cible.\n\t\t\t\t\t\t\tX est égal au nombre de Mana verrouillées sous un composant Condensation que vous contrôlez. Ce composant Condensation retourne dans votre main.",
         "Illustration": "Geoffrey Amesse",
         "Texte d'ambiance": "Aucun",
         "Extension": "Jeu de base",
         "Notes": null,
-        "image": "Haute-pression.png"
+        "image": "Haute-pression.png",
+        "Composants": {
+            "Condensation": 1
+        },
+        "Couts": {
+            "Eau": "3",
+            "Air": "1",
+            "Feu": "1"
+        }
     },
     {
         "id": 59,
         "Nom": "GRANDES EAUX",
         "Élément": "Eau",
         "Type": "Sort",
-        "Coût en Mana": "2  Eau\n1  Air",
-        "Composants requis ": "Aucun",
         "Effets": "Inflige 1 point de dégâts à n'importe quelle cible par composant Eau actuellement sur le plateau (Permanents et Équipements exclus).",
         "Illustration": "Geoffrey Amesse",
         "Texte d'ambiance": "Aucun",
         "Extension": "Jeu de base",
         "Notes": "Un composant Eau est n'importe quel sort canalisé dont l'élément est Eau.",
-        "image": "Grandes-eaux.png"
+        "image": "Grandes-eaux.png",
+        "Composants": {},
+        "Couts": {
+            "Eau": "2",
+            "Air": "1"
+        }
     },
     {
         "id": 60,
         "Nom": "SOURCE PRODIGIEUSE",
         "Élément": "Eau",
         "Type": "Permanent",
-        "Coût en Mana": "2  Eau 2  Minéral",
-        "Composants requis ": "Aucun",
         "Effets": "Vos composants Eau sont comptés 1 fois de plus (Permanents exclus).",
         "Illustration": "Geoffrey Amesse",
         "Texte d'ambiance": "Aucun",
         "Extension": "Jeu de base",
         "Notes": "Plusieurs instances de ce Permanent peuvent s'accumuler.",
-        "image": "Source-prodigieuse.png"
+        "image": "Source-prodigieuse.png",
+        "Composants": {},
+        "Couts": {
+            "Eau": "2",
+            "Minéral": "2"
+        }
     },
     {
         "id": 61,
         "Nom": "ANNEAU D'AZUR",
         "Élément": "Eau",
         "Type": "Équipement - Anneau",
-        "Coût en Mana": "2  Eau 1  Minéral",
-        "Composants requis ": "Aucun",
         "Effets": "Au début de votre tour, choississez 1 option : \n\t\t\t\t\t\t\t- Vous gagnez 1 Point de Vie.\n\t\t\t\t\t\t\t- Si vous êtes Mage Noir, vous pouvez placer 1 Mana de votre réserve sous 1 sort que vous contrôlez.",
         "Illustration": "Morgane Perrin-Roudil",
         "Texte d'ambiance": "Aucun",
         "Extension": "Jeu de base",
         "Notes": "Il n'y a aucune limite au nombre de PV que les joueurs peuvent avoir.",
-        "image": "Anneau-d-azur.png"
+        "image": "Anneau-d-azur.png",
+        "Composants": {},
+        "Couts": {
+            "Eau": "2",
+            "Minéral": "1"
+        }
     },
     {
         "id": 62,
         "Nom": "INFILTRATION SUBTILE",
         "Élément": "Eau",
         "Type": "Permanent",
-        "Coût en Mana": "2  Eau",
-        "Composants requis ": "Aucun",
         "Effets": "A chaque fois que vous échangez de la Mana Eau avec l'Ether Disponible, inflige 1 point de dégâts à l'adversaire, puis libère 1 Mana verrouillée par ce sort.\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\tDès qu'il ne verrouille plus de Mana, détruisez ce sort, puis vous pouvez prendre jusqu'à 2 Mana Eau dans l'Ether disponible.",
         "Illustration": "Geoffrey Amesse",
         "Texte d'ambiance": "Aucun",
         "Extension": "Jeu de base",
         "Notes": "\"Échanger de la Mana Eau\" peut marcher dans les deux sens, tant que de la Mana Eau est impliquée, ça compte.",
-        "image": "Infiltration-subtile.png"
+        "image": "Infiltration-subtile.png",
+        "Composants": {},
+        "Couts": {
+            "Eau": "2"
+        }
     },
     {
         "id": 63,
         "Nom": "MAELSTRÖM",
         "Élément": "Eau",
         "Type": "Permanent",
-        "Coût en Mana": "3  Eau 2  Arcane",
-        "Composants requis ": "Aucun",
         "Effets": "À la fin de leur tour, les joueurs mettent la Mana de leur réserve de Mana dans l'Ether Disponible.\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\tAu début de votre tour, détruisez Maelström.",
         "Illustration": "Geoffrey Amesse",
         "Texte d'ambiance": "Aucun",
         "Extension": "Jeu de base",
         "Notes": "Maelström se détruit au début de voitre tour. Cela veut dire avant votre phase de pioche et de récupération de Mana.",
-        "image": "Maelstrom.png"
+        "image": "Maelstrom.png",
+        "Composants": {},
+        "Couts": {
+            "Eau": "3",
+            "Arcane": "2"
+        }
     },
     {
         "id": 64,
         "Nom": "MARÉE",
         "Élément": "Eau",
         "Type": "Sort",
-        "Coût en Mana": "2  Eau",
-        "Composants requis ": "Aucun",
         "Effets": "Piochez 1 carte, puis défaussez-vous d'1 carte en main.\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\tMettez la Mana verrouillée par ce sort sous un autre sort que vous contrôlez.\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\tPuis vous pouvez payer 1 Mana Eau pour aller chercher 1 carte Marée dans votre défausse, et la mettre dans votre main.",
         "Illustration": "Jeffrey Jeanson",
         "Texte d'ambiance": "Aucun",
         "Extension": "Jeu de base",
         "Notes": "Vous pouvez mettre la Mana sous n'importe quel sort que vous contrôlez. Rituels, préparés, canalisés, Permanents ou Équipements.",
-        "image": "Maree.png"
+        "image": "Maree.png",
+        "Composants": {},
+        "Couts": {
+            "Eau": "2"
+        }
     },
     {
         "id": 65,
         "Nom": "LA GUÉRISSEUSE DE L'EAU",
         "Élément": "Eau",
         "Type": "Sort",
-        "Coût en Mana": "2  Eau 2  Arcane",
-        "Composants requis ": "Aucun",
         "Effets": "La cible de votre choix gagne 3 Points de Vie.\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\tReprenez 1 sort de votre défausse dans votre main.",
         "Illustration": "Camille Fourcade",
         "Texte d'ambiance": "Aucun",
         "Extension": "Jeu de base",
         "Notes": "Il n'y a pas de limite au nombre de PV qu'un joueur peut avoir.",
-        "image": "La-guerisseuse-de-l-eau.png"
+        "image": "La-guerisseuse-de-l-eau.png",
+        "Composants": {},
+        "Couts": {
+            "Eau": "2",
+            "Arcane": "2"
+        }
     },
     {
         "id": 66,
         "Nom": "ENGLOUTISSEMENT",
         "Élément": "Eau",
         "Type": "Sort",
-        "Coût en Mana": "3  Eau",
-        "Composants requis ": "1 Vague",
         "Effets": "Détruisez 1 Permanent ou 1 Équipement.",
         "Illustration": "Geoffrey Amesse",
         "Texte d'ambiance": "Aucun",
         "Extension": "Jeu de base",
         "Notes": null,
-        "image": "Engloutissement.png"
+        "image": "Engloutissement.png",
+        "Composants": {
+            "Vague": 1
+        },
+        "Couts": {
+            "Eau": "3"
+        }
     },
     {
         "id": 67,
         "Nom": "TSUNAMI",
         "Élément": "Eau",
         "Type": "Sort",
-        "Coût en Mana": "Aucun",
-        "Composants requis ": "1 Océan\n1 Séisme",
         "Effets": "Détruisez tous les Permanents de l'adversaire.Inflige 8 points de dégâts à l'adversaire.",
         "Illustration": "Camille Fourcade",
         "Texte d'ambiance": "Aucun",
         "Extension": "Voie du Guerrier-Mage",
         "Notes": null,
-        "image": "Tsunami.png"
+        "image": "Tsunami.png",
+        "Composants": {
+            "Océan": 1,
+            "Séisme": 1
+        },
+        "Couts": {}
     },
     {
         "id": 68,
         "Nom": "RITUEL DU MÉLANGE",
         "Élément": "Eau",
         "Type": "Rituel",
-        "Coût en Mana": "3  Arcane 2  Eau",
-        "Composants requis ": "Aucun",
         "Effets": "Vous passez Mage Noir.\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\tLorsque vous ajoutez de la Mana à l'Éther disponible durant votre phase de récupération de Mana, ajoutez 1 Mana de moins.\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\tDurant votre phase principale, vous pouvez échanger la Mana verrouillée sous vos sorts Eau et celle de votre réserve de Mana à 1 pour 1.",
         "Illustration": "Nicolas Camiade",
         "Texte d'ambiance": "None",
         "Extension": "Jeu de base",
         "Notes": "Il n'y a aucune limite au nombre de fois ou au nombre de Mana que vous pouvez échanger pendant votre phase principale.",
-        "image": "Rituel-du-melange.png"
+        "image": "Rituel-du-melange.png",
+        "Composants": {},
+        "Couts": {
+            "Arcane": "3",
+            "Eau": "2"
+        }
     },
     {
         "id": 69,
         "Nom": "ROCHE",
         "Élément": "Minéral",
         "Type": "Sort",
-        "Coût en Mana": "1  Minéral",
-        "Composants requis ": "Aucun",
         "Effets": "Si vous contrôlez 2 exemplaires de ce sort, ils ont \"Transmutable : Minerai\".\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\tForge. (Est défaussé lorsqu'utilisé comme composant pour un Équipement.)\n\n\t\t\t\t\t\t\tPrenez 1 Mana Minéral dans l'Ether disponible puis infligez 1 point de dégât à 1 Permanent.",
         "Illustration": "Geoffrey Amesse",
         "Texte d'ambiance": "Aucun",
         "Extension": "Voie du Guerrier-Mage",
         "Notes": "Ce sort a également \"Transmutable : Minerai\" si vous contrôlez plus de 2 exemplaires.",
-        "image": "Roche.png"
+        "image": "Roche.png",
+        "Composants": {},
+        "Couts": {
+            "Minéral": "1"
+        }
     },
     {
         "id": 70,
         "Nom": "ROCHE FERREUSE",
         "Element": "Minéral",
         "Type": "Sort",
-        "Coût en Mana": "1  Minéral",
-        "Composants requis": "Aucun",
         "Effets": "Durant votre phase principale, vous pouvez placer 1 Mana Feu de votre réserve de Mana sous ce sort. Il gagne alors \"Transmutable : Minerai\" (Ce sort est utilisable comme composant Minerai.)\n\n\t\t\t\t\t\t\tForge. (Est défaussé lorsqu'utilisé comme composant pour un Équipement.)",
         "Artwork": "Geoffrey Amesse",
         "Texte d'ambiance": "Aucun",
         "Extension": "Voie du Guerrier-Mage",
         "Notes": "Rien ne vous empêche de mettre plusieurs Mana Feu sous ce sort. Cela dit il ne comptera pas comme plusieurs composants \"Minerai\".",
-        "image": "Roche-ferreuse.png"
+        "image": "Roche-ferreuse.png",
+        "Composants": {},
+        "Couts": {
+            "Minéral": "1"
+        }
     },
     {
         "id": 71,
         "Nom": "ROCHE D'OBSIDIENNE",
         "Élément": "Minéral",
         "Type": "Sort",
-        "Coût en Mana": "4  Minéral",
-        "Composants requis ": "Aucun",
         "Effets": "Lorsque des dégâts vous sont infligés, ce sort libère 1 Mana Minéral. \n\t\t\t\t\t\t\tLorsqu'il ne verrouille plus de Mana, ce sort a Transmutable : Minerai (Ce sort est utilisable comme composant Minerai.)\n\n\t\t\t\t\t\t\tForge. (Est défaussé lorsqu'utilisé comme composant pour un Équipement.)\n\n\t\t\t\t\t\t\tAjoutez 1 à chaque chiffre dans l'effet de tout Équipement utilisant ce sort comme composant.",
         "Illustration": "Geoffrey Amesse",
         "Texte d'ambiance": "Aucun",
         "Extension": "Voie du Guerrier-Mage",
         "Notes": "Tant qu'il n'y a pas de Mana sous celle-ci, cette carte est comptée comme si elle avait \"Minerai\" dans son nom à tout instant. Comme si celle-ci était nommée \"Roche d'obsidienne minerai\".",
-        "image": "Roche-d-obsidienne.png"
+        "image": "Roche-d-obsidienne.png",
+        "Composants": {},
+        "Couts": {
+            "Minéral": "4"
+        }
     },
     {
         "id": 72,
@@ -1021,168 +1264,220 @@
         "Élément": "Minéral",
         "Type": "Permanent",
         "PV": "3",
-        "Coût en Mana": "2  Minéral",
-        "Composants requis ": "1 Roche",
         "Effets": "Lorsque ce Permanent a moins de un Point de Vie, libérez sa Mana et canalisez-le en composant plutôt que de le détruire.\n\t\t\t\t\t\t\tCelui-ci ne compte alors plus comme composant Mur.",
         "Illustration": "Geoffrey Amesse",
         "Texte d'ambiance": "Aucun",
         "Extension": "Voie du Guerrier-Mage",
         "Notes": "Si vous contrôlez un \"Anneau de lithomancie\", nous confirmons que ce sort perd \"Protecteur\" lorsqu'il est mis en composant pour manque de PV.",
-        "image": "Mur-de-roche.png"
+        "image": "Mur-de-roche.png",
+        "Composants": {
+            "Roche": 1
+        },
+        "Couts": {
+            "Minéral": "2"
+        }
     },
     {
         "id": 73,
         "Nom": "ARMURE SOLIDE",
         "Élément": "Minéral",
         "Type": "Équipement - Torse",
-        "Coût en Mana": "2  Minéral",
-        "Composants requis ": "1 Minerai",
         "Effets": "Chaque tour, ignorez jusqu'à X point de dégâts qui vous sont infligés. X est égal au nombre de Mana Minéral sous vos autres composants. \n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\tX est déterminé la première fois que des dégâts vous sont infligés dans le tour.\n\t\t\t\t\t\t\tX ne peut être supérieur à 4.",
         "Illustration": "Charles Ouvrard",
         "Texte d'ambiance": "Aucun",
         "Extension": "Voie du Guerrier-Mage",
         "Notes": "Cette armure vous protège aussi des dégâts que vous vous infliger vous-même.",
-        "image": "Armure-solide.png"
+        "image": "Armure-solide.png",
+        "Composants": {
+            "Minerai": 1
+        },
+        "Couts": {
+            "Minéral": "2"
+        }
     },
     {
         "id": 74,
         "Nom": "ARMURE MATÉRIALISÉE",
         "Élément": "Minéral",
         "Type": "Équipement - Torse",
-        "Coût en Mana": "3  Minéral 1  Feu",
-        "Composants requis ": "1 Armure 1 Minerai",
         "Effets": "Les dégâts que vous subissez sont réduits de 1.\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\tChaque tour, ignorez jusqu'à X point de dégâts qui vous sont infligés. X est égal au nombre de Mana Minéral sous vos autres composants. \n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\tX est déterminé la première fois que des dégâts vous sont infligés dans le tour.\n\t\t\t\t\t\t\tX ne peut être supérieur à 6",
         "Illustration": "Charles Ouvrard",
         "Texte d'ambiance": "Aucun",
         "Extension": "Voie du Guerrier-Mage",
         "Notes": "Cette armure vous protège aussi des dégâts que vous vous infliger vous-même.",
-        "image": "Armure-materialisee.png"
+        "image": "Armure-materialisee.png",
+        "Composants": {
+            "Armure": 1,
+            "Minerai": 1
+        },
+        "Couts": {
+            "Minéral": "3",
+            "Feu": "1"
+        }
     },
     {
         "id": 75,
         "Nom": "LAME FORGÉE",
         "Élément": "Minéral",
         "Type": "Équipement - Arme",
-        "Coût en Mana": "2  Minéral",
-        "Composants requis ": "1 Roche",
         "Effets": "Une fois par tour, durant votre phase principale, inflige 1 point de dégât à n'importe quelle cible.",
         "Illustration": "Charles Ouvrard",
         "Texte d'ambiance": "Aucun",
         "Extension": "Voie du Guerrier-Mage",
         "Notes": "Vous pouvez appliquer plusieurs fois l'effet de ce sort si vous en lancez plusieurs en un seul tour.",
-        "image": "Lame-forgee.png"
+        "image": "Lame-forgee.png",
+        "Composants": {
+            "Roche": 1
+        },
+        "Couts": {
+            "Minéral": "2"
+        }
     },
     {
         "id": 76,
         "Nom": "ÉPÉE MATÉRIALISÉE",
         "Élément": "Minéral",
         "Type": "Équipement - Arme",
-        "Coût en Mana": "3  Minéral 1  Arcane",
-        "Composants requis ": "1 Lame 1 Minerai",
         "Effets": "Une fois par tour, durant votre phase principale, inflige 2 points de dégâts à n'importe quelle cible.\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\tPuis la Lame utilisée comme composant pour lancer ce sort applique ses effets (même si celle-ci est dans la défausse).",
         "Illustration": "Jessica Heran",
         "Texte d'ambiance": "Aucun",
         "Extension": "Voie du Guerrier-Mage",
         "Notes": null,
-        "image": "Lame-materialisee.png"
+        "image": "Lame-materialisee.png",
+        "Composants": {
+            "Lame": 1,
+            "Minerai": 1
+        },
+        "Couts": {
+            "Minéral": "3",
+            "Arcane": "1"
+        }
     },
     {
         "id": 77,
         "Nom": "ANNEAU DE LITHOMANCIE",
         "Élément": "Minéral",
         "Type": "Équipement - Anneau",
-        "Coût en Mana": "2  Minéral 1  Eau",
-        "Composants requis ": "Aucun",
         "Effets": "Vos permanents Minéraux ayant au moins un Point de Vie ont \"Protecteur\". (Vous pouvez rediriger les dégâts adverses sur ce Permanent.)",
         "Illustration": "Nicolas Camiade",
         "Texte d'ambiance": "Aucun",
         "Extension": "Voie du Guerrier-Mage",
         "Notes": "Les Permanents sans PV sont considérés comme n'ayant aucun Point de Vie.Ils ne sont donc pas affectés par cet Équipement.",
-        "image": "anneau-de-lithomancie.png"
+        "image": "anneau-de-lithomancie.png",
+        "Composants": {},
+        "Couts": {
+            "Minéral": "2",
+            "Eau": "1"
+        }
     },
     {
         "id": 78,
         "Nom": "VOLÉE AIGUISÉE",
         "Élément": "Minéral",
         "Type": "Sort",
-        "Coût en Mana": "2  Minéral 2  Air",
-        "Composants requis ": "2 Roche",
         "Effets": "Vous inflige 1 point de dégâts 5 fois, à moins que vous ne soyez Mage Noir.\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\tInflige 1 point de dégâts à l'adversaire 5 fois.",
         "Illustration": "Charles Ouvrard",
         "Texte d'ambiance": "Aucun",
         "Extension": "Voie du Guerrier-Mage",
         "Notes": null,
-        "image": "Volee-aiguisee.png"
+        "image": "Volee-aiguisee.png",
+        "Composants": {
+            "Roche": 2
+        },
+        "Couts": {
+            "Minéral": "2",
+            "Air": "2"
+        }
     },
     {
         "id": 79,
         "Nom": "MÉTÉORE D'INA",
         "Élément": "Minéral",
         "Type": "Sort",
-        "Coût en Mana": "X  Minéral",
-        "Composants requis ": "1 Météore",
         "Effets": "Si vous êtes Mage Noir, pour préparer ce sort, vous pouvez utiliser 4 roches au lieu d'1 composant Météore.\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\tInflige X points de dégâts à n'importe quelle cible.",
         "Illustration": "Charles Ouvrard",
         "Texte d'ambiance": "Aucun",
         "Extension": "Voie du Guerrier-Mage",
         "Notes": "Si vous êtes Mage Noir, c'est comme si ce sort avait 1 Météore ou 4 roche comme prérequis en composant.",
-        "image": "Meteore-d-ina.png"
+        "image": "Meteore-d-ina.png",
+        "Composants": {
+            "Météore": 1
+        },
+        "Couts": {
+            "Minéral": "X"
+        }
     },
     {
         "id": 80,
         "Nom": "SÉISME",
         "Élément": "Minéral",
         "Type": "Sort",
-        "Coût en Mana": "6  Minéral",
-        "Composants requis ": "Aucun",
         "Effets": "Inflige 4 points de dégâts à l'adversaire.\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\tSi vous êtes Mage Noir, détruisez TOUS les Permanents.",
         "Illustration": "Charles Ouvrard",
         "Texte d'ambiance": "Aucun",
         "Extension": "Voie du Guerrier-Mage",
         "Notes": "Oui, TOUS les Permanents signifie aussi les vôtres.",
-        "image": "Seisme.png"
+        "image": "Seisme.png",
+        "Composants": {},
+        "Couts": {
+            "Minéral": "6"
+        }
     },
     {
         "id": 81,
         "Nom": "MONS IGNEUS",
         "Élément": "Minéral",
         "Type": "Sort",
-        "Coût en Mana": "2  Minéral 2  Feu",
-        "Composants requis ": "1 Magma 1 Séisme",
         "Effets": "Inflige 5 points de dégâts à n'importe quelle cible, puis 1 composant Séisme et 1 composant Magma que vous contrôlez appliquent leurs effets.",
         "Illustration": "Charles Ouvrard",
         "Texte d'ambiance": "Aucun",
         "Extension": "Voie du Guerrier-Mage",
         "Notes": null,
-        "image": "Mons-igneus.png"
+        "image": "Mons-igneus.png",
+        "Composants": {
+            "Magma": 1,
+            "Séisme": 1
+        },
+        "Couts": {
+            "Minéral": "2",
+            "Feu": "2"
+        }
     },
     {
         "id": 82,
         "Nom": "COUP DE MARTEAU DIVIN",
         "Élément": "Minéral",
         "Type": "Sort",
-        "Coût en Mana": "4  Minéral",
-        "Composants requis ": "Aucun",
         "Effets": "Détruisez 1 Équipement.",
         "Illustration": "Johann Goutard",
         "Texte d'ambiance": "Aucun",
         "Extension": "Voie du Guerrier-Mage",
         "Notes": null,
-        "image": "Coup-de-marteau-divin.png"
+        "image": "Coup-de-marteau-divin.png",
+        "Composants": {},
+        "Couts": {
+            "Minéral": "4"
+        }
     },
     {
         "id": 83,
         "Nom": "BRULÛRE DE MAGMA",
         "Élément": "Minéral",
         "Type": "Sort",
-        "Coût en Mana": "2  Minéral 1  Feu",
-        "Composants requis ": "1 Roche 1 Flamme",
         "Effets": "Inflige 5 points de dégâts à n'importe quelle cible. Vous pouvez détruire 1 Anneau.",
         "Illustration": "Johann Goutard",
         "Texte d'ambiance": "Aucun",
         "Extension": "Voie du Guerrier-Mage",
         "Notes": "1 anneau signifie n'importe quel \"Équipement: Anneau\".",
-        "image": "Brulure-de-magma.png"
+        "image": "Brulure-de-magma.png",
+        "Composants": {
+            "Roche": 1,
+            "Flamme": 1
+        },
+        "Couts": {
+            "Minéral": "2",
+            "Feu": "1"
+        }
     },
     {
         "id": 84,
@@ -1190,293 +1485,359 @@
         "Élément": "Minéral",
         "Type": "Permanent",
         "PV": "7",
-        "Coût en Mana": "3  Minéral 1  Végétal",
-        "Composants requis ": "Aucun",
         "Effets": "Ne peut pas gagner de Points de Vie.",
         "Illustration": "Charles Ouvrard",
         "Texte d'ambiance": "Aucun",
         "Extension": "Voie du Guerrier-Mage",
         "Notes": "Vous pouvez cibler ce Permanent avec des sorts de soin, mais l'arbre ne gagnera juste pas de PV.",
-        "image": "Arbre-de-pierre.png"
+        "image": "Arbre-de-pierre.png",
+        "Composants": {},
+        "Couts": {
+            "Minéral": "3",
+            "Végétal": "1"
+        }
     },
     {
         "id": 85,
         "Nom": "POING MÉTÉORE",
         "Élément": "Minéral",
         "Type": "Sort",
-        "Coût en Mana": "3  Minéral 1  Air",
-        "Composants requis ": "2 Roche",
         "Effets": "Inflige 5 points de dégâts à l'adversaire.\n\t\t\t\t\t\t\tPuis vous inflige 2 points de dégâts.\n\t\t\t\t\t\t\tPuis inflige 2 points de dégâts à TOUS les Permanents.",
         "Illustration": "Johann Goutard",
         "Texte d'ambiance": "Aucun",
         "Extension": "Voie du Guerrier-Mage",
         "Notes": "A cause de l'ordre de résolution des effets, vous prendrez des dégâts avant les Permanents.",
-        "image": "Poing-meteore.png"
+        "image": "Poing-meteore.png",
+        "Composants": {
+            "Roche": 2
+        },
+        "Couts": {
+            "Minéral": "3",
+            "Air": "1"
+        }
     },
     {
         "id": 86,
         "Nom": "RITUEL DU GUERRIER-MAGE",
         "Élément": "Minéral",
         "Type": "Rituel",
-        "Coût en Mana": "3  Arcane 2  Minéral",
-        "Composants requis ": "Aucun",
         "Effets": "Vous passez Mage Noir.\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\tA la fin de votre tour, détruisez tous les Équipements que vous avez joué ce tour-ci.\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\tLes dégâts infligés par vos Équipements sont augmentés de 1. \n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\tA tout moment vous pouvez défausser 1 carte de votre main pour que l'Équipement ciblé soit indestructible ce tour-ci.",
         "Illustration": "Johann Goutard",
         "Texte d'ambiance": "Aucun",
         "Extension": "Voie du Guerrier-Mage",
         "Notes": "Les Équipements rendus indestructibles sont aussi comptés indestructibles pendant la fin de tour.",
-        "image": "Rituel-du-guerrier-mage.png"
+        "image": "Rituel-du-guerrier-mage.png",
+        "Composants": {},
+        "Couts": {
+            "Arcane": "3",
+            "Minéral": "2"
+        }
     },
     {
         "id": 87,
         "Nom": "COURONNE DE LA RENONCIATION",
         "Élément": "Minéral",
         "Type": "Équipement - Tête",
-        "Coût en Mana": "2  Minéral 1  Arcane",
-        "Composants requis ": "Aucun",
         "Effets": "Ne peut être équipé que par un Mage Noir.\n\t\t\t\t\t\t\tTant que ce sort est en jeu, vous n'êtes pas Mage Noir et vos rituels n'ont pas d'effet.\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\tA tout moment payez 1 Mana pour ignorer 1 point de dégâts qui vous est infligé.\n\t\t\t\t\t\t\tSi votre réserve de Mana est vide, détruisez cet Équipement.",
         "Illustration": "Charles Ouvrard",
         "Texte d'ambiance": "Aucun",
         "Extension": "Voie du Guerrier-Mage",
         "Notes": "Lorsque vous avez ceci d'équippé, tous vos rituels en main et sur le plateau sont considérés comme des cartes sans aucun effet.",
-        "image": "Couronne-de-la-renonciation.png"
+        "image": "Couronne-de-la-renonciation.png",
+        "Composants": {},
+        "Couts": {
+            "Minéral": "2",
+            "Arcane": "1"
+        }
     },
     {
         "id": 88,
         "Nom": "SECONDE DIVISÉE",
         "Élément": "Arcane",
         "Type": "Sort",
-        "Coût en Mana": "Aucun",
-        "Composants requis ": "Aucun",
         "Effets": "Transmutable : Temps (Ce sort est utilisable comme composant Temps.)\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\tSoustrayez 1 à chaque chiffre présent dans l'effet de tout sort utilisant ce composant. \n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\tSi vous êtes Mage Noir, ajoutez 1 à la place.",
         "Illustration": "Jeffrey Jeanson",
         "Texte d'ambiance": "Aucun",
         "Extension": "Voie du plieur de temps",
         "Notes": "Cette carte est comptée comme si elle avait \"Temps\" dans son nom à tout instant.Comme si celle-ci était nommée \"Seconde divisée temps\".",
-        "image": "Seconde-divisee.png"
+        "image": "Seconde-divisee.png",
+        "Composants": {},
+        "Couts": {}
     },
     {
         "id": 89,
         "Nom": "ACCÉLÉRATION DU TEMPS",
         "Élément": "Arcane",
         "Type": "Sort",
-        "Coût en Mana": "1  Arcane 1  Air",
-        "Composants requis ": "Aucun",
         "Effets": "Tout sort utilisant ce sort comme composant gagne l'effet :\n\t\t\t\t\t\t\t\"Défaussez 1 carte du dessus de votre deck.\"",
         "Illustration": "Morgane Perrin-Roudil",
         "Texte d'ambiance": "Aucun",
         "Extension": "Voie du plieur de temps",
         "Notes": "L'effet de défausse est ajouté en dessous de l'effet du sort. C'est donc la dernière partie de l'effet du sort à s'appliquer, juste avant que le sort ne soit défaussé et libère sa Mana.",
-        "image": "Acceleration-du-temps.png"
+        "image": "Acceleration-du-temps.png",
+        "Composants": {},
+        "Couts": {
+            "Arcane": "1",
+            "Air": "1"
+        }
     },
     {
         "id": 90,
         "Nom": "SIÈCLE",
         "Élément": "Arcane",
         "Type": "Sort",
-        "Coût en Mana": "2  Arcane 1  Végétal",
-        "Composants requis ": "Aucun",
         "Effets": "Transmutable : Temps (Ce sort est utilisable comme composant Temps.)\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\tAprès que ce sort est utilisé comme composant, défaussez-le.\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\tDoublez chaque chiffre présent dans l'effet de tout sort utilisant ce composant.",
         "Illustration": "Jeffrey Jeanson",
         "Texte d'ambiance": "Aucun",
         "Extension": "Voie du plieur de temps",
         "Notes": "Cette carte est comptée comme si elle avait \"Temps\" dans son nom à tout instant.Comme si celle-ci était nommée \"Siècle temps\".",
-        "image": "Siecle.png"
+        "image": "Siecle.png",
+        "Composants": {},
+        "Couts": {
+            "Arcane": "2",
+            "Végétal": "1"
+        }
     },
     {
         "id": 91,
         "Nom": "PARADOXE TEMPOREL",
         "Élément": "Arcane",
         "Type": "Sort",
-        "Coût en Mana": "Aucun",
-        "Composants requis ": "1 Temps",
         "Effets": "Inflige 0 points de dégâts à n'importe quelle cible.\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\tSi vous êtes Mage Noir, vous pouvez préparer cette carte depuis votre défausse une fois par tour.",
         "Illustration": "Morgane Perrin-Roudil",
         "Texte d'ambiance": "Aucun",
         "Extension": "Voie du plieur de temps",
         "Notes": "Comme les effets de ce sort lorsque vous êtes Mage Noir parlent de cette \"carte\", vous pouvez en préparer plusieurs copies depuis votre défausse en un seul tour, tant que c'est toujours une carte différente.",
-        "image": "Paradoxe-temporel.png"
+        "image": "Paradoxe-temporel.png",
+        "Composants": {
+            "Temps": 1
+        },
+        "Couts": {}
     },
     {
         "id": 92,
         "Nom": "INSPIRATION BRILLANTE",
         "Élément": "Arcane",
         "Type": "Sort",
-        "Coût en Mana": "2  Arcane",
-        "Composants requis ": "Aucun",
         "Effets": "Piochez 2 cartes, puis défaussez-vous d'1 carte en main.",
         "Illustration": "Jessica Heran",
         "Texte d'ambiance": "Aucun",
         "Extension": "Voie du plieur de temps",
         "Notes": null,
-        "image": "Inspiration-brillante.png"
+        "image": "Inspiration-brillante.png",
+        "Composants": {},
+        "Couts": {
+            "Arcane": "2"
+        }
     },
     {
         "id": 93,
         "Nom": "SUPPRESSION DIMENSIONNELLE",
         "Élément": "Arcane",
         "Type": "Sort",
-        "Coût en Mana": "2  Arcane",
-        "Composants requis ": "Aucun",
         "Effets": "Défaussez 1 sort en préparation.",
         "Illustration": "Nicolas Camiade",
         "Texte d'ambiance": "Aucun",
         "Extension": "Voie du plieur de temps",
         "Notes": "Les Permanents et Équipements ne sont pas considérés comme des sorts en préparation.",
-        "image": "Suppression-dimensionnelle.png"
+        "image": "Suppression-dimensionnelle.png",
+        "Composants": {},
+        "Couts": {
+            "Arcane": "2"
+        }
     },
     {
         "id": 94,
         "Nom": "AVANCE RAPIDE",
         "Élément": "Arcane",
         "Type": "Sort",
-        "Coût en Mana": "1  Arcane 1  Feu",
-        "Composants requis ": "1 Temps",
         "Effets": "Défaussez 1 composant Temps que vous contrôlez.\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\tPiochez 1 carte.\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\tInflige 2 points de dégâts à n'importe quelle cible.",
         "Illustration": "Jeffrey Jeanson",
         "Texte d'ambiance": "Aucun",
         "Extension": "Voie du plieur de temps",
         "Notes": "Si vous ne contrôlez aucun composant Temps lorsque vous activez ce sort, alors vous n'avez pas besoin de défausser quoi que ce soit et les effets suivants s'appliquent tout de même.",
-        "image": "Avance-rapide.png"
+        "image": "Avance-rapide.png",
+        "Composants": {
+            "Temps": 1
+        },
+        "Couts": {
+            "Arcane": "1",
+            "Feu": "1"
+        }
     },
     {
         "id": 95,
         "Nom": "RÉCUPÉRATION TEMPORELLE",
         "Élément": "Arcane",
         "Type": "Sort",
-        "Coût en Mana": "3  Arcane 2  Eau",
-        "Composants requis ": "Aucun",
         "Effets": "Si vous êtes Mage Noir, ce sort coûte 1 Mana Eau de moins à préparer. \n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\tChoisissez jusqu'à 3 composants Temps dans votre défausse et mettez-les en jeu, canalisés comme composants.",
         "Illustration": "Jeffrey Jeanson",
         "Texte d'ambiance": "Aucun",
         "Extension": "Voie du plieur de temps",
         "Notes": "Les sorts revenant de la défausse ne passent pas par l'état de préparation. Ils sont directement canalisés.",
-        "image": "Recuperation-temporelle.png"
+        "image": "Recuperation-temporelle.png",
+        "Composants": {},
+        "Couts": {
+            "Arcane": "3",
+            "Eau": "2"
+        }
     },
     {
         "id": 96,
         "Nom": "BLAST TEMPOREL",
         "Élément": "Arcane",
         "Type": "Sort",
-        "Coût en Mana": "2  Arcane",
-        "Composants requis ": "1 Temps",
         "Effets": "Vous pouvez préparer ce sort depuis votre défausse tant qu'il n'est pas au dessus de celle-ci.\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\tLorsque vous préparez ce sort, défaussez le composant Temps utilisé.\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\tInflige 3 points de dégâts à n'importe quelle cible.",
         "Illustration": "Johann Goutard",
         "Texte d'ambiance": "Aucun",
         "Extension": "Voie du plieur de temps",
         "Notes": "Vous pouvez en effet préparer ce sort plusieurs fois en un seul tour.",
-        "image": "Blast-temporel.png"
+        "image": "Blast-temporel.png",
+        "Composants": {
+            "Temps": 1
+        },
+        "Couts": {
+            "Arcane": "2"
+        }
     },
     {
         "id": 97,
         "Nom": "RAPPEL AU PRÉSENT",
         "Élément": "Arcane",
         "Type": "Sort",
-        "Coût en Mana": "4  Arcane",
-        "Composants requis ": "1 Temps",
         "Effets": "Inflige 1 point de dégâts à n'importe quelle cible pour chaque composant Temps dans votre défausse.\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\tDéfaussez TOUS les sorts en jeu ne verrouillant aucune Mana.",
         "Illustration": "Jeffrey Jeanson",
         "Texte d'ambiance": "Aucun",
         "Extension": "Voie du plieur de temps",
         "Notes": "Ce sort inflige tous ses dégâts d'un coup. ainsi, avoir 4 composants Temps en défausse infligera 4 dégâts et non pas 4 fois 1 dégât.",
-        "image": "Rappel-au-present.png"
+        "image": "Rappel-au-present.png",
+        "Composants": {
+            "Temps": 1
+        },
+        "Couts": {
+            "Arcane": "4"
+        }
     },
     {
         "id": 98,
         "Nom": "DESTIN DIFFÉRÉ",
         "Élément": "Arcane",
         "Type": "Sort",
-        "Coût en Mana": "1  Arcane",
-        "Composants requis ": "Aucun",
         "Effets": "Vous pouvez utiliser 1 composant Temps supplémentaire pour le prochain sort que vous préparez ce tour-ci.",
         "Illustration": "Geoffrey Amesse",
         "Texte d'ambiance": "Aucun",
         "Extension": "Voie du plieur de temps",
         "Notes": "Vous pouvez activer plusieurs copies de ce sort à la suite si vous souhaitez que votre prochain sort ait besoin de plusieurs composants Temps.",
-        "image": "Destin-differe.png"
+        "image": "Destin-differe.png",
+        "Composants": {},
+        "Couts": {
+            "Arcane": "1"
+        }
     },
     {
         "id": 99,
         "Nom": "CONNAISSANCE DE L'HISTOIRE",
         "Élément": "Arcane",
         "Type": "Sort",
-        "Coût en Mana": "6  Arcane",
-        "Composants requis ": "1 Temps",
         "Effets": "Activez les effets d'1 sort de votre défausse. Si vous êtes Mage Noir, les effets du composant Temps utilisé pour Connaissance de l'Histoire s'appliquent aussi à ce sort.\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\tSi Connaissance de l'Histoire est activé depuis votre défausse, il ne peut cibler que les sorts situés en-dessous de celui-ci.",
         "Illustration": "Morgane Perrin-Roudil",
         "Texte d'ambiance": "Aucun",
         "Extension": "Voie du plieur de temps",
         "Notes": "Lorsque vous appliquez les effets de plusieurs sorts, vous devez choisir tous les sorts appliqués en même temps.",
-        "image": "Connaisance-de-l-histoire.png"
+        "image": "Connaisance-de-l-histoire.png",
+        "Composants": {
+            "Temps": 1
+        },
+        "Couts": {
+            "Arcane": "6"
+        }
     },
     {
         "id": 100,
         "Nom": "CHAOS",
         "Élément": "Arcane",
         "Type": "Sort",
-        "Coût en Mana": "2  Arcane 1  Feu 1  Eau",
-        "Composants requis ": "1 Inspiration",
         "Effets": "Regardez la carte du dessus de votre deck. Si c'est un Équipement, un Permanent, ou un Rituel, mettez-la à la défausse. Autrement, appliquez ses effets et défaussez-la.\n\t\t\t\t\t\t\tPuis l'adversaire fait de même.\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\tSi aucun joueur n'a perdu de Point de Vie, relancez les effets de ce sort.",
         "Illustration": "Johann Goutard",
         "Texte d'ambiance": "Aucun",
         "Extension": "Voie du plieur de temps",
         "Notes": null,
-        "image": "Chaos.png"
+        "image": "Chaos.png",
+        "Composants": {
+            "Inspiration": 1
+        },
+        "Couts": {
+            "Arcane": "2",
+            "Feu": "1",
+            "Eau": "1"
+        }
     },
     {
         "id": 101,
         "Nom": "SCEPTRE GALACTIQUE",
         "Élément": "Arcane",
         "Type": "Équipement - Arme",
-        "Coût en Mana": "2  Arcane 1  Minéral",
-        "Composants requis ": "1 Temps",
         "Effets": "Au début de votre tour, inflige 1 point de dégâts à n'importe quelle cible.\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\tVous pouvez détruire cet Équipement pour aller chercher 1 Équipement Galactique dans votre deck, le montrer à l'adversaire, le mettre dans votre main et mélanger votre deck.",
         "Illustration": "Johann Goutard",
         "Texte d'ambiance": "Aucun",
         "Extension": "Voie du plieur de temps",
         "Notes": "Vous ne pouvez défausser ceci depuis le plateau que durant votre phase principale.",
-        "image": "Sceptre-galactique.png"
+        "image": "Sceptre-galactique.png",
+        "Composants": {
+            "Temps": 1
+        },
+        "Couts": {
+            "Arcane": "2",
+            "Minéral": "1"
+        }
     },
     {
         "id": 102,
         "Nom": "CAPE GALACTIQUE",
         "Élément": "Arcane",
         "Type": "Équipement - Dos",
-        "Coût en Mana": "3  Arcane 1  Minéral",
-        "Composants requis ": "Aucun",
         "Effets": "Ne peut être préparé que par un Mage Noir. \n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\tLorsque vous devriez piocher lors de votre phase de pioche, à la place choisissez une carte dans votre défausse et mettez-la dans votre main.",
         "Illustration": "Johann Goutard",
         "Texte d'ambiance": "Aucun",
         "Extension": "Voie du plieur de temps",
         "Notes": "Les effets de ce sort prennent place durant votre phase de pioche entière. Si vous deviez piocher plusieurs fois durant celle-ci alors il vous faudrait aller chercher dans votre défausse autant de fois à la place.",
-        "image": "Cape-galactique.png"
+        "image": "Cape-galactique.png",
+        "Composants": {},
+        "Couts": {
+            "Arcane": "3",
+            "Minéral": "1"
+        }
     },
     {
         "id": 103,
         "Nom": "RITUEL DU SAVOIR",
         "Élément": "Arcane",
         "Type": "Rituel",
-        "Coût en Mana": "3  Arcane",
-        "Composants requis ": "Aucun",
         "Effets": "Vous passez Mage Noir.\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\tAu début de votre tour, défaussez la carte du dessus de votre deck.",
         "Illustration": "Johann Goutard",
         "Texte d'ambiance": "Aucun",
         "Extension": "Voie du plieur de temps",
         "Notes": "Notez que l'effet de défausse se passe avant votre phase de pioche.",
-        "image": "Rituel-du-savoir.png"
+        "image": "Rituel-du-savoir.png",
+        "Composants": {},
+        "Couts": {
+            "Arcane": "3"
+        }
     },
     {
         "id": 104,
         "Nom": "RITE DE PASSAGE",
         "Élément": "Arcane",
         "Type": "Rituel",
-        "Coût en Mana": "2  Arcane",
-        "Composants requis ": "Aucun",
         "Effets": "Vous passez Mage Noir.",
         "Illustration": "Jeffrey Jeanson",
         "Texte d'ambiance": "Aucun",
         "Extension": "Voie du plieur de temps & Jeu de base",
         "Notes": null,
-        "image": "Rite-de-passage.png"
+        "image": "Rite-de-passage.png",
+        "Composants": {},
+        "Couts": {
+            "Arcane": "2"
+        }
     }
 ]

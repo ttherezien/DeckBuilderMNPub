@@ -46,12 +46,13 @@ private:
     QListWidget *listeCartesDisponibles;
     QListWidget *listeCartesDeck;
     QLineEdit *champInteraction;
-    QJsonArray cartes;
+    QJsonArray cartesLoader;
     QLabel *labelChampInteraction;
     QPushButton *retour;
     QMap<QString, int> cartesDeck;
     QLayout *StatDeck;
 
+    QListWidget *listeComposantDeck;
 
 
     QCheckBox *checkAir{};

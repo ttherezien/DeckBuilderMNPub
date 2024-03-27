@@ -17,7 +17,6 @@
 DeckBuilder::DeckBuilder(QWidget *parent) : QWidget(parent) {
 
 
-
     this->resize(1000, 800);
     QHBoxLayout *layoutPrincipal = new QHBoxLayout(this);
     QVBoxLayout *layoutListeCartesDisponibles = new QVBoxLayout();
@@ -95,10 +94,10 @@ DeckBuilder::DeckBuilder(QWidget *parent) : QWidget(parent) {
 
     // Chargement des données initiales
 
-    cartes = DataLoader().loadJsonData();
+    cartesLoader = DataLoader().loadJsonData();
 
-    for (int i = 0; i < cartes.size(); ++i) {
-        QJsonObject obj = cartes[i].toObject();
+    for (int i = 0; i < cartesLoader.size(); ++i) {
+        QJsonObject obj = cartesLoader[i].toObject();
         QString nomCarte = obj["Nom"].toString();
         listeCartesDisponibles->addItem(nomCarte);
     }
@@ -203,10 +202,10 @@ void DeckBuilder::ajouterCarteAuDeck() {
             cartesDeck.insert(carteAjoutee, 1);
         }
 
-        // Effacer la liste des cartes dans le deck
+        // Effacer la liste des cartesLoader dans le deck
         listeCartesDeck->clear();
 
-        // Ajouter chaque carte et son nombre d'occurrences à la liste des cartes dans le deck
+        // Ajouter chaque carte et son nombre d'occurrences à la liste des cartesLoader dans le deck
         QMap<QString, int>::iterator i;
         for (i = cartesDeck.begin(); i != cartesDeck.end(); ++i) {
 
@@ -225,8 +224,8 @@ void DeckBuilder::visualiserLaCarteSelectionner(QListWidget *listeCarte) {
     QStringList parts = carteSelectionnee.split(" (");
     QString nomCarte = parts[0];
 
-    for (int i = 0; i < cartes.size(); ++i) {
-        QJsonObject obj = cartes[i].toObject();
+    for (int i = 0; i < cartesLoader.size(); ++i) {
+        QJsonObject obj = cartesLoader[i].toObject();
         QString nomCarte = obj["Nom"].toString();
         if (nomCarte == parts[0]) {
             QString image = obj["image"].toString();
@@ -400,6 +399,10 @@ QLayout *DeckBuilder::vueInfoDeck() {
     StatDeck->addItem(nbrCarteLayout);
     StatDeck->addItem(imageLayout);
 
+    listeComposantDeck = new QListWidget();
+
+    StatDeck->addWidget(listeComposantDeck);
+
 
     return StatDeck;
 
@@ -416,6 +419,9 @@ void DeckBuilder::updateStatDeck(QLayout *StatDeck) {
     QLabel *labelNbCartesArcane = (QLabel *) StatDeck->itemAt(0)->layout()->itemAt(6)->widget();
 
 
+    listeComposantDeck->addItem("Arbre (1)");
+
+
     int nbrCartes = 0;
     int nbrCartesAir = 0;
     int nbrCartesFeu = 0;
@@ -424,11 +430,13 @@ void DeckBuilder::updateStatDeck(QLayout *StatDeck) {
     int nbrCartesMineral = 0;
     int nbrCartesArcane = 0;
 
+    QMap<QString, int> composants;
+
     QMap<QString, int>::iterator i;
     for (i = cartesDeck.begin(); i != cartesDeck.end(); ++i) {
         nbrCartes += i.value();
-        for (int j = 0; j < cartes.size(); ++j) {
-            QJsonObject obj = cartes[j].toObject();
+        for (int j = 0; j < cartesLoader.size(); ++j) {
+            QJsonObject obj = cartesLoader[j].toObject();
             if (obj["Nom"].toString() == i.key()) {
                 if (obj["Élément"] == "Air") {
                     nbrCartesAir += i.value();
@@ -443,9 +451,43 @@ void DeckBuilder::updateStatDeck(QLayout *StatDeck) {
                 } else if (obj["Élément"] == "Arcane") {
                     nbrCartesArcane += i.value();
                 }
-            }
-        }
+
+                QJsonValue composantsDeLaCarte = obj["Composants"]; //QJsonValue(object, QJsonObject({"Arbre":1,"Flamme":1}))
+                QJsonObject objComposants = composantsDeLaCarte.toObject(); //QJsonObject({"Arbre":1,"Flamme":1})
+                QStringList keys = objComposants.keys(); //QStringList({"Arbre","Flamme"})
+                for (int k = 0; k < keys.size(); ++k) {
+                    QString key = keys[k]; //QString("Arbre")
+                    int value = objComposants[key].toInt(); //int(1)
+                    if (composants.contains(key)) {
+                        composants[key] += value * i.value();
+                    } else {
+                        composants.insert(key, value*i.value());
+                    }
+                }
+
+
+            }// les noms sont les mêmes
+
+
+
+
+
+
+
+
+
+
+
+        }//for
     }
+
+    listeComposantDeck->clear();
+    for (i = composants.begin(); i != composants.end(); ++i) {
+        listeComposantDeck->addItem(i.key() + " (" + QString::number(i.value()) + ")");
+    }
+
+
+
 
     labelNbCartesTotal->setText(QString::number(nbrCartes));
     labelNbCartesAir->setText(QString::number(nbrCartesAir));
@@ -454,6 +496,8 @@ void DeckBuilder::updateStatDeck(QLayout *StatDeck) {
     labelNbCartesPlante->setText(QString::number(nbrCartesPlante));
     labelNbCartesPierre->setText(QString::number(nbrCartesMineral));
     labelNbCartesArcane->setText(QString::number(nbrCartesArcane));
+
+
 
 
 }
