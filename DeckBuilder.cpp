@@ -112,13 +112,13 @@ DeckBuilder::DeckBuilder(QWidget *parent) : QWidget(parent) {
     });
     connect(boutonAjouter, &QPushButton::clicked, this, &DeckBuilder::ajouterCarteAuDeck);
     connect(listeCartesDisponibles, &QListWidget::itemDoubleClicked, this, &DeckBuilder::ajouterCarteAuDeck);
-    connect(listeCartesDisponibles, &QListWidget::itemClicked, this, [this]() {
+    connect(listeCartesDisponibles, &QListWidget::itemSelectionChanged, this, [this]() {
         this->visualiserLaCarteSelectionner(listeCartesDisponibles);
     });
     connect(listeCartesDeck, &QListWidget::itemClicked, [this]() {
         this->visualiserLaCarteSelectionner(listeCartesDeck);
     });
-    connect(listeCartesDeck, &QListWidget::itemPressed, [this]() {
+    connect(listeCartesDeck, &QListWidget::itemSelectionChanged, [this]() {
         this->visualiserLaCarteSelectionner(listeCartesDeck);
     });
     connect(boutonEnlever, &QPushButton::clicked, this, &DeckBuilder::enleverCarteDeck);

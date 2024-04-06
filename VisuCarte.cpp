@@ -45,7 +45,10 @@ VisuCarte::VisuCarte(QWidget *parent) : QWidget(parent){
     mainLayout->addWidget(detailsWidget);
 
     connect(searchBar, &QLineEdit::textChanged, this, &VisuCarte::filtrerListeCartes);
-    connect(listWidget, &QListWidget::itemClicked, this, &VisuCarte::afficherDetailsCarte);
+    connect(listWidget, &QListWidget::itemSelectionChanged, this, [this](){
+        QListWidgetItem *item = listWidget->currentItem();
+        afficherDetailsCarte(item);
+    });
     connect(retour, &QPushButton::clicked, [this](){
         emit retourMenu();
     });

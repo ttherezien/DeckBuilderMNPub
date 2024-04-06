@@ -18,6 +18,7 @@
 #include "DataLoader.h"
 #include "DeckBuilder.h"
 #include "VisuCarte.h"
+#include "DeckView.h"
 
 class MainWindow : public QWidget {
 Q_OBJECT
@@ -36,6 +37,7 @@ private:
     DeckBuilder *deckBuilder;
     VisuCarte *visuCarte;
     QVBoxLayout *mainLayout;
+    DeckView *deckView;
 
 };
 

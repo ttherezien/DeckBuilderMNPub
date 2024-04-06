@@ -39,7 +39,8 @@ MainWindow::MainWindow(QWidget *parent) : QWidget(parent) {
         deckBuilder = new DeckBuilder();
         effacerBouton();
         connect(deckBuilder, &DeckBuilder::retourMenu, this, [this]() {
-            deckBuilder->hide();
+
+            deckBuilder->~DeckBuilder();
             button1->show();
             button2->show();
             button3->show();
@@ -51,7 +52,7 @@ MainWindow::MainWindow(QWidget *parent) : QWidget(parent) {
         deckBuilder = new DeckBuilder();
         effacerBouton();
         connect(deckBuilder, &DeckBuilder::retourMenu, this, [this]() {
-            deckBuilder->hide();
+            deckBuilder->~DeckBuilder();
             button1->show();
             button2->show();
             button3->show();
@@ -65,7 +66,7 @@ MainWindow::MainWindow(QWidget *parent) : QWidget(parent) {
         visuCarte = new VisuCarte();
         effacerBouton();
         connect(visuCarte, &VisuCarte::retourMenu, this, [this]() {
-            visuCarte->hide();
+            visuCarte->~VisuCarte();
             button1->show();
             button2->show();
             button3->show();
